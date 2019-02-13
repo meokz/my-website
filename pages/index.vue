@@ -1,39 +1,44 @@
 <template>
-  <section class="container">
+  
     <div>
-      <app-logo/>
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <h1 class="title">
-            a
-          </h1>
+      <MyHeader/>
+      
+      <section class="container">
+        <app-logo/>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h1 class="title">
+              a
+            </h1>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h2 class="subtitle">
+              Nuxt.js project
+            </h2>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <h2 class="subtitle">
-            Nuxt.js project
-          </h2>
+        <div class="links">
+          <a
+            href="https://nuxtjs.org/"
+            target="_blank"
+            class="button--green">Documentation</a>
+          <a
+            href="https://github.com/nuxt/nuxt.js"
+            target="_blank"
+            class="button--grey">GitHub</a>
         </div>
-      </div>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+      </section>
     </div>
-  </section>
 </template>
 
 <script>
+import MyHeader from '~/components/MyHeader.vue'
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    MyHeader
   }
 }
 </script>
