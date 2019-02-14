@@ -4,7 +4,7 @@
       <p class="small_p" v-html="project.title"></p>
     </div>
     <div class="col-xs-5 col-sm-3">
-      <a class="thumbnail" href="https://www.cmcbooks.co.jp/products/detail.php?product_id=5450">
+      <a class="thumbnail" v-bind:href="project.url">
         <img class="img-responsive" v-bind:src="getImageURL">
       </a>
     </div>
@@ -12,6 +12,10 @@
 </template>
 
 <style scoped>
+
+.no-padding-left {
+    padding-left: 0px;
+}
 
 </style>
 
