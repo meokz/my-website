@@ -16,17 +16,56 @@
             <h3>大峠 和基 - Kazuki Otao</h3>
             <p v-show="!isEnglish">{{ profile.jp }}</p>
             <p v-show="isEnglish">{{ profile.en }}</p>
-            <p align="right"><a href="./profile/portfolio/Resume2017.pdf" target="_blank">>>> Resume (English)</a></p>
+            <p align="right"><a href="./profile/portfolio/Resume2017.pdf" target="_blank">{{detail}} Resume (English)</a></p>
           </div>
-        </div> <!-- end <div class="row"> -->
-      </div>
+        </div>
+      </div> <!-- end <div id="profile"> -->
+
+      <div id="project">
+        <h2>Project</h2>
+        <Work :isEnglish="isEnglish"/>
+      </div> <!-- end <div id="project"> -->
+
     </section>
   </div> <!-- end <div id="app"> -->
 </template>
 
+<style>
+a:link    { color: #000000; }
+a:visited { color: #000000; }
+a:hover   { color: #ff0000; }
+a:active  { color: #ff8000; }
+
+.container {
+    background: #FFFFFF;
+}
+
+h2 {
+    font-size: 18px;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+    border-bottom: solid 1px #D2D2D2;
+}
+
+h3 { font-size: 16px; }
+
+p {
+    font-size: 12px;
+}
+
+li {
+    font-size: 12px;
+    margin: 5px;
+}
+
+ul { list-style:none; }
+
+</style>
+
 <script>
 import MyHeader from '~/components/MyHeader.vue'
 import Carousel from '~/components/Carousel.vue'
+import Work from '~/components/profile/Work.vue'
 
 const profile = {
   jp: "1996年生まれ。2012年から徳山高専で情報電子工学を学んだ後，2017年に筑波大学情報メディア創成学類に編入。ミスター筑波大学2018 (ミスターキャンパス賞/企業賞)，U.22プログラミング・コンテスト (経済産業省商務情報政策局長賞/企業賞)，全国高専プログラミングコンテスト (敢闘賞2回)など多岐に渡る分野で活動。2017年より落合陽一率いるデジタルネイチャー研究室に所属し，バーチャルリアリティを専門に研究を行う。書籍1本，国際会議論文6本，国内会議論文1本。中国地方コンピュータフェスティバルではソフトウェア部門・メディア部門で3年連続最優秀賞を含む4回の受賞。企業ハッカソンではチームラボ (最優秀賞)，サイバーエージェント (特別賞)，レバレジーズ (最優秀賞)に出場。",
@@ -36,11 +75,13 @@ const profile = {
 export default {
   components: {
     MyHeader,
-    Carousel
+    Carousel,
+    Work
   },
   data() {
     return {
       isEnglish: false,
+      detail: ">>>",
       profile: profile
     }
   },
