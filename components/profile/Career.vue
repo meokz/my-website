@@ -1,5 +1,6 @@
 <template>
   <div class="carrer">
+    <h2>Carrer</h2>
     <div v-show="!isEnglish">
       <h4>学歴</h4>
       <ul>
@@ -21,7 +22,6 @@
         <li v-for="item in carrer.work_en" v-bind:key="item">{{ item }}</li>
       </ul>
     </div>
-
   </div>
 </template>
 

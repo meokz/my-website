@@ -33,7 +33,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .link li{
     margin: 20px 10px 20px 10px;
