@@ -1,0 +1,60 @@
+<template>
+  <div class="carrer">
+    <div v-show="!isEnglish">
+      <h4>学歴</h4>
+      <ul>
+        <li v-for="item in carrer.academic_jp" v-bind:key="item">{{ item }}</li>
+      </ul>
+      <h4>職歴</h4>
+      <ul>
+        <li v-for="item in carrer.work_jp" v-bind:key="item">{{ item }}</li>
+      </ul>
+    </div>
+
+    <div v-show="isEnglish">
+      <h4>Academic Background</h4>
+      <ul>
+        <li v-for="item in carrer.academic_en" v-bind:key="item">{{ item }}</li>
+      </ul>
+      <h4>Work Experience</h4>
+      <ul>
+        <li v-for="item in carrer.work_en" v-bind:key="item">{{ item }}</li>
+      </ul>
+    </div>
+
+  </div>
+</template>
+
+<script>
+const carrer = {
+  "academic_jp": [
+    "2012/04 - 2017/03 　徳山工業高等専門学校 情報電子工学科 (古賀崇了研究室)",
+    "2017/04 - present. 　筑波大学 情報学群 情報メディア創成学類 (落合陽一研究室)"
+  ],
+  "academic_en": [
+    "2012/04 - 2017/03 　National Institute of Technology, Tokuyama College. (Koga Lab.)",
+    "2017/04 - present. 　University of Tsukuba (Yoichi Ochiai Lab.)"
+  ],
+  "work_jp": [
+    "2015/08 - 2015/09 　チームラボ株式会社 インタラクティブチーム (就業インターン)",
+    "2016/12 - 2017/08 　ユニロボット株式会社 Unityエンジニア (就業インターン)",
+    "2017/09 - present. 　ピクシーダストテクノロジーズ株式会社 エンジニア (就業インターン)"
+  ],
+  "work_en": [
+    "2015/08 - 2015/09 　teamLab Inc. Interactive Team (Intern)",
+    "2016/12 - 2017/08 　Unirobot Corporation. Unity Enginner (Intern)",
+    "2017/09 - present. 　Pixie Dust Technologies, Inc. Research Enginner (Intern)"
+  ]
+}
+
+export default {
+  data() {
+    return {
+      carrer: carrer
+    }
+  },
+  props: [
+    'isEnglish'
+  ]
+}
+</script>
