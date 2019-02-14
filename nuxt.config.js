@@ -9,11 +9,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", href: "honoka/css/bootstrap.min.css"}
+      { rel: "stylesheet", href: "/honoka/css/bootstrap.min.css"}
     ],
     script: [
-      { src: "jquery-3.2.1.min.js"},
-      { src: "honoka/js/bootstrap.min.js"}
+      { src: "/jquery-3.2.1.min.js"},
+      { src: "/honoka/js/bootstrap.min.js"}
     ]
   },
   loading: { color: '#3B8070' },

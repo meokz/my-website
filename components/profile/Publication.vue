@@ -2,22 +2,25 @@
   <div class="publication">
     <h2>Publication</h2>
     <div>
-      <h3>Book - 書籍</h3>
-      <ul>
-        <Project v-for="book in books" v-bind:key="book" v-bind:project="book"/>
-      </ul>
-    </div>
-    <div>
-      <h3>International Conference - 国際会議</h3>
-      <ul>
-        <Project v-for="paper in papers" v-bind:key="paper" v-bind:project="paper"/>
-      </ul>
-    </div>
-    <div>
-      <h3>International Conference Posters - 国際会議 ポスター発表</h3>
-      <ul>
-        <Project v-for="poster in posters" v-bind:key="poster" v-bind:project="poster"/>
-      </ul>
+      <div>
+        <h3>Book - 書籍</h3>
+        <ul>
+          <Project v-for="book in books" v-bind:key="book.title" v-bind:project="book"/>
+        </ul>
+      </div>
+      <div>
+        <h3>International Conference - 国際会議</h3>
+        <ul>
+          <Project v-for="paper in papers" v-bind:key="paper.title" v-bind:project="paper"/>
+        </ul>
+      </div>
+      <div>
+        <h3>International Conference Posters - 国際会議 ポスター発表</h3>
+        <ul>
+          <Project v-for="poster in posters" v-bind:key="poster.title" v-bind:project="poster"/>
+        </ul>
+      </div>
+      <p align="right"><a href="./publication">{{detail}} All Publication</a></p>
     </div>
   </div> 
 </template>
@@ -71,7 +74,8 @@ export default {
     return {
       books: books,
       papers: papers,
-      posters: posters
+      posters: posters,
+      detail: ">>>",
     }
   },
 }

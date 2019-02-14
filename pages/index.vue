@@ -16,7 +16,13 @@
       <Publication />
 
       <Exhibition />
-      
+
+      <Achievement />
+
+      <Media />
+
+      <TechnicalSkills />
+
     </section>
   </div> <!-- end <div id="app"> -->
 </template>
@@ -63,6 +69,9 @@ import Career from '~/components/profile/Career.vue'
 import Link from '~/components/profile/Link.vue'
 import Publication from '~/components/profile/Publication.vue'
 import Exhibition from '~/components/profile/Exhibition.vue'
+import Achievement from '~/components/profile/Achievement.vue'
+import Media from '~/components/profile/Media.vue'
+import TechnicalSkills from '~/components/profile/TechnicalSkills.vue'
 
 export default {
   components: {
@@ -72,7 +81,10 @@ export default {
     Career,
     Link,
     Publication,
-    Exhibition
+    Exhibition,
+    Achievement,
+    Media,
+    TechnicalSkills
   },
   data() {
     return {

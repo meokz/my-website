@@ -2,7 +2,7 @@
   <div class="project">
     <h2>Project</h2>
     <div>
-      <ProjectDetail v-for="work in projects" v-bind:key="work" v-bind:work="work" v-bind:isEnglish="isEnglish"/>
+      <ProjectDetail v-for="work in projects" v-bind:key="work.name" v-bind:work="work" v-bind:isEnglish="isEnglish"/>
     </div>
   </div>
 </template>
@@ -27,6 +27,31 @@ const projects = [
     en: "No english description.",
     tag: [
       "U-22プロコン 経済産業省商務情報政策局長賞"
+    ]
+  },
+  {
+    name: "reink",
+    title: "Re:ink：干渉可能なプロジェクションマッピング",
+    jp: "Re:inkは真っ白になった工場を学園祭の来場者の手によって蘇らせるインスタレーションです。Unityを用いて映像を生成・同期することで，再生するたびに異なるストーリーが展開します。",
+    en: "No english description.",
+    tag: []
+  },
+  {
+    name: "smartmakura",
+    title: "Smart枕",
+    jp: "Smart枕はAndroid端末と枕型デバイスが連携する新しいライフハックプロダクトです。枕型デバイスに組み込まれた圧力センサとバイブレーションを用いてユーザを確実に起こすとともに，睡眠情報を記録し，最適な睡眠時間を教えてくれます。",
+    en: "No english description.",
+    tag: [
+      "パソコン甲子園2014"
+    ]
+  }, 
+  {
+    name: "spacewars",
+    title: "SpaceWars",
+    jp: "自ユニットを弾き飛ばして敵ユニットに攻撃します。ユニットはHPが0になるか，ステージから落とされると消滅します。いろいろな戦略を楽しむだけでなく，グラフィクスエフェクトと物理演算による爽快なプレイを楽しむことができます。",
+    en: "No english description.",
+    tag: [
+      "コンフェス2015 ソフトウェア部門1位"
     ]
   }, 
 ]

@@ -3,7 +3,7 @@
     <h2>Exhibition</h2>
     <div>
       <ul>
-        <Project v-for="exhibition in exhibitions" v-bind:key="exhibition" v-bind:project="exhibition"/>
+        <Project v-for="exhibition in exhibitions" v-bind:key="exhibition.title" v-bind:project="exhibition"/>
       </ul>
     </div>
   </div> 
