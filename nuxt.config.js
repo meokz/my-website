@@ -9,12 +9,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"}
+      { rel: "stylesheet", href: "honoka/css/bootstrap.min.css"}
     ],
     script: [
-      { src: "https://code.jquery.com/jquery-3.3.1.min.js"},
-      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js' },
-      { src: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"}
+      { src: "jquery-3.2.1.min.js"},
+      { src: "honoka/js/bootstrap.min.js"}
     ]
   },
   loading: { color: '#3B8070' },

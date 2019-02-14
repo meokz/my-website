@@ -1,76 +1,48 @@
 <template>
-  
-    <div>
-      <MyHeader/>
-      
-      <section class="container">
-        <app-logo/>
+  <div>
+    <MyHeader/>
+    
+    <section class="container">
+      <div id="profile">
+        <h2>Profile</h2>
         <div class="row">
           <div class="col-xs-12 col-sm-4">
-            <h1 class="title">
-              a
-            </h1>
+            <Carousel/>
           </div>
-          <div class="col-xs-12 col-sm-4">
-            <h2 class="subtitle">
-              Nuxt.js project
-            </h2>
+
+          <div class="col-xs-12 col-sm-8">
+            <h3>大峠 和基 - Kazuki Otao</h3>
+            <p>
+              1996年生まれ。
+              2012年から徳山高専で情報電子工学を学んだ後，2017年に筑波大学情報メディア創成学類に編入。
+              ミスター筑波大学2018 (ミスターキャンパス賞/企業賞)，U.22プログラミング・コンテスト (経済産業省商務情報政策局長賞/企業賞)，全国高専プログラミングコンテスト (敢闘賞2回)など多岐に渡る分野で活動。
+              2017年より落合陽一率いるデジタルネイチャー研究室に所属し，バーチャルリアリティを専門に研究を行う。
+              書籍1本，国際会議論文6本，国内会議論文1本。 
+              中国地方コンピュータフェスティバルではソフトウェア部門・メディア部門で3年連続最優秀賞を含む4回の受賞。
+              企業ハッカソンではチームラボ (最優秀賞)，サイバーエージェント (特別賞)，レバレジーズ (最優秀賞)に出場。
+            </p>
+            <p>Kazuki Otao was born in 1996. After studying computer science and electronic engineering at National Institute of Technology, Tokuyama College since 2012, he is incorporated into the College of Media Arts, Science and Technology at the University of Tsukuba in 2017. He got a prize in many contests including U-22 programming contest and national college of technology programming contest. He is an expert researcher of the aerial imaging system in Digital Nature Group.</p>
+            <p align="right"><a href="./profile/portfolio/Resume2017.pdf" target="_blank">>>> Resume (English)</a></p>
           </div>
-        </div>
-        <div class="links">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            class="button--green">Documentation</a>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            class="button--grey">GitHub</a>
-        </div>
-      </section>
-    </div>
+        </div> <!-- end <div class="row"> -->
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
 import MyHeader from '~/components/MyHeader.vue'
-import AppLogo from '~/components/AppLogo.vue'
+import Carousel from '~/components/Carousel.vue'
 
 export default {
   components: {
-    AppLogo,
-    MyHeader
+    MyHeader,
+    Carousel
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
 

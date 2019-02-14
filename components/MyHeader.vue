@@ -1,18 +1,31 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" href="#">meo-cs.net</a>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">　meo-cs.net</a>
+      </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <ul class="navbar-nav navbar-right">
-        <li class="nav-item nav-link" href="#">Project</li>
-        <li class="nav-item nav-link" href="#">Publication</li>
-        <li class="nav-item nav-link" href="#">Blog</li>
-        <li class="nav-item nav-link" href="#">Profile</li>
-      </ul>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/works">Project</a></li>
+          <li><a href="/publication">Publication</a></li>
+          <li><a href="http://meokz.hatenablog.com/" target="_blank">Blog</a></li>
+          <li><a href="/">Profile</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
+
+<style scoped>
+  /* li.nav-item {
+    color: #43acff;
+  } */
+
+</style>
