@@ -1,10 +1,10 @@
 <template>
   <div class="work">
-    <a href="./works/mistflow/">
+    <a v-bind:href="getURL">
       <div class="row">
         <div class="col-xs-4 col-sm-4">
           <div class="thumbnail">
-            <img class="img-responsive" src="~/assets/profile/img/mistflow.jpg"/>
+            <img class="img-responsive" v-bind:src="getImageURL"/>
           </div>
         </div>
         <div class="col-xs-8 col-sm-8">
@@ -47,26 +47,21 @@
 <script>
 import Tag from '~/components/profile/Tag.vue'
 
-const work = {
-  title: "MistFlow",
-  jp: "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを研究開発しました。",
-  en: "This research presents a fog display for visualization of adaptive shape-changing flow.",
-  tag: [
-    "IDW 2018", "SIGGRAPH Asia 2017", "情報処理学会インタラクション2017"
-  ]
-}
-
 export default {
   components: {
     Tag
   },
-  data() {
-    return {
-      work: work
-    }
-  },
   props: [
-    'isEnglish'
-  ]
+    'isEnglish',
+    'work'
+  ],
+  computed: {
+    getURL: function() {
+      return "./works/" + this.work.name
+    },
+    getImageURL: function() {
+      return require("~/assets/profile/img/" + this.work.name + ".jpg")
+    }
+  }
 }
 </script>
