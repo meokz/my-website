@@ -1,5 +1,7 @@
 <template>
   <div class="link">
+    <h2>Link</h2>
+    
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <ul>

@@ -11,16 +11,12 @@
 
       <Career v-bind:isEnglish="isEnglish"/>
 
-      <div id="link">
-        <h2>Link</h2>
-        <Link />
-      </div>
+      <Link />
 
-      <div id="publication">
-        <h2>Publication</h2>
-        <Project />
-        <!-- <Work v-for="work in works" v-bind:key="work" v-bind:work="work" v-bind:isEnglish="isEnglish"/> -->
-      </div> 
+      <Publication />
+
+      <Exhibition />
+      
     </section>
   </div> <!-- end <div id="app"> -->
 </template>
@@ -65,7 +61,8 @@ import Profile from '~/components/profile/Profile.vue'
 import Projects from '~/components/profile/Projects.vue'
 import Career from '~/components/profile/Career.vue'
 import Link from '~/components/profile/Link.vue'
-import Project from '~/components/profile/Project.vue'
+import Publication from '~/components/profile/Publication.vue'
+import Exhibition from '~/components/profile/Exhibition.vue'
 
 export default {
   components: {
@@ -74,7 +71,8 @@ export default {
     Projects,
     Career,
     Link,
-    Project
+    Publication,
+    Exhibition
   },
   data() {
     return {
