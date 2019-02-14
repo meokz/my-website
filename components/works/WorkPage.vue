@@ -1,14 +1,27 @@
-/* Override Bootstrap */
-@media (min-width:  768px) { .container { width: 750px; } }
-@media (min-width:  992px) { .container { width: 750px; } } 
-@media (min-width: 1200px) { .container { width: 750px; } }
+<template>
+  <div>
+    <h2>{{ project.title }}</h2>
 
-a:link    { color: #000000; }
-a:visited { color: #000000; }
-a:hover   { color: #ff0000; }
-a:active  { color: #ff8000; }
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div style="padding-top: 0px">
+          <div class="video">
+            <iframe v-bind:src="project.youtube" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="work_caption">
+          <p>{{ project.description_en }}</p>
+          <p>{{ project.description_jp }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
-/* My CSS */
+<style>
+
 .work_title {
     margin-bottom: 10px;
 }
@@ -65,4 +78,12 @@ a:active  { color: #ff8000; }
     width: 100%;
     height: 100%;
 }
+</style>
 
+<script>
+export default {
+  props: [
+    'project'
+  ]
+}
+</script>
