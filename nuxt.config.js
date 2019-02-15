@@ -8,12 +8,12 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", href: "/honoka/css/bootstrap.min.css"}
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
+      { rel: "stylesheet", href: "/css-js/honoka/css/bootstrap.min.css"}
     ],
     script: [
-      { src: "/jquery-3.2.1.min.js"},
-      { src: "/honoka/js/bootstrap.min.js"}
+      { src: "/css-js/jquery-3.2.1.min.js"},
+      { src: "/css-js/honoka/js/bootstrap.min.js"}
     ]
   },
   loading: { color: '#3B8070' },
