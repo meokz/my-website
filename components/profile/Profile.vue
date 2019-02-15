@@ -10,7 +10,7 @@
         <h3>大峠 和基 - Kazuki Otao</h3>
         <p v-show="!isEnglish">{{ profile.jp }}</p>
         <p v-show="isEnglish">{{ profile.en }}</p>
-        <p align="right"><a href="./profile/portfolio/Resume2017.pdf" target="_blank">{{detail}} Resume (English)</a></p>
+        <p align="right"><a href="/profile/Resume2017.pdf" target="_blank">{{detail}} Resume (English)</a></p>
       </div>
     </div>
 

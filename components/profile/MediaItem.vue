@@ -1,6 +1,6 @@
 <template>
   <li>
-    <a v-bind:href="getURL" target="_blank">{{ getString }}</a>
+    <a v-bind:href="item.url" target="_blank">{{ getString }}</a>
   </li>
 </template>
 
