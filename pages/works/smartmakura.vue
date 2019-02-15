@@ -12,7 +12,7 @@
           <h3><span class="glyphicon glyphicon-link"></span>Web</h3>
           <p><a href="http://dream-exp.net/works/smartmakura/" target="_blank">Smart枕 | dream-exp.net</a></p>
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="./manual.pdf" target="_blank">Manual [PDF 4.1MB]</a></p>
+          <p><a href="/works/smartmakura/manual.pdf" target="_blank">Manual [PDF 4.1MB]</a></p>
           <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
           <p>eclipse / Java etc.</p>
           <h3><span class="glyphicon glyphicon-bookmark"></span>Achievement</h3>

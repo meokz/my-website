@@ -8,9 +8,9 @@
       <div class="row">
         <div class="work_caption">
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="./docs/paper-Interaction17.pdf" target="_blank">Paper Preprint (Japanese) [PDF 2.8MB]</a></p>
-          <p><a href="./docs/presen-tct.pdf" target="_blank">Presentation (Japanese) [PDF 2.8MB]</a></p>
-          <p><a href="./docs/mistflow.pdf" target="_blank">SIGGRAPH Asia 2017 Two-page Abstract [PDF 4.5MB]</a></p>
+          <p><a href="/works/mistflow/paper-Interaction17.pdf" target="_blank">Paper Preprint (Japanese) [PDF 2.8MB]</a></p>
+          <p><a href="/works/mistflow/presen-tct.pdf" target="_blank">Presentation (Japanese) [PDF 2.8MB]</a></p>
+          <p><a href="/works/mistflow/mistflow.pdf" target="_blank">SIGGRAPH Asia 2017 Two-page Abstract [PDF 4.5MB]</a></p>
           <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
           <p>Unity, Leap Motion</p>
           <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>

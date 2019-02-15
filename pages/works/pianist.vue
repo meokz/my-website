@@ -10,8 +10,8 @@
           <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
           <p>Project Manegiment / Presentation / Programming / VR</p>
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="./doc/pianist_yosen.pdf" target="_blank">予選資料 [PDF 4.7MB]</a></p>
-          <p><a href="./doc/pianist_honsen.pdf" target="_blank">本選資料 [PDF 15.3MB]</a></p>
+          <p><a href="/works/pianist/pianist_yosen.pdf" target="_blank">予選資料 [PDF 4.7MB]</a></p>
+          <p><a href="/works/pianist/pianist_honsen.pdf" target="_blank">本選資料 [PDF 15.3MB]</a></p>
           <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
           <p>Unity / C# etc.</p>
           <h3><span class="glyphicon glyphicon-link"></span>Link</h3>
