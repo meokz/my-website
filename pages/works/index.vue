@@ -9,6 +9,10 @@
 
     <section class="container">
       <div>
+        Jump to -> Research / Product / Entertainment / Hackathon / ArtWork
+      </div>
+
+      <div>
         <h2>Research</h2>
         <div>
           <div class="row">
@@ -79,6 +83,28 @@
             </div>
             <div class="col-xs-12 col-sm-4">
               <Work v-bind:project="entertainment[5]"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Hackathon</h2>
+        <div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="hackathon[0]"/>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="hackathon[1]"/>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="hackathon[2]"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="hackathon[3]"/>
             </div>
           </div>
         </div>

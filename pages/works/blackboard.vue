@@ -8,11 +8,11 @@
       <div class="row">
         <div class="work_caption">
           <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
-          <p>Project Manegiment / Presentation / Programming</p>
-          <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
-          <p>C# / XNA / MMDX / Kinect SDK etc.</p>
-          <h3><span class="glyphicon glyphicon-bookmark"></span>Achievement</h3>
-          <p><a href="http://www.procon.gr.jp/?page_id=59711" target="_blank">全国高等専門学校プログラミングコンテスト, 第24回旭川大会, 課題部門, 敢闘賞</a></p>
+          <p>Director / Scripting / Motion Graphcis / Physical Simulation / 3D Modeling</p>
+          <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
+          <p>Unity / C# / Blender / AfterEffects etc.</p>
+          <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
+          <p>中国高専コンピュータフェスティバル2016 メディア部門1位</p>
         </div>
       </div>
 
@@ -38,9 +38,9 @@ import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
 const project = {
-  "name": "raziokun",
-  "title": "RAZIOくん―ラジオ体操支援システム―",
-  "description_jp": "RAZIOくん―ラジオ体操練習支援システム―は、Kinectを用いてラジオ体操の採点を行うシステムです。画面には、Kinectから取得したRGB映像の上に3Dモデルによるお手本が表示されます。また、骨格情報よりラジオ体操のアドバイスをしてくれます.カラオケのように自分のラジオ体操を採点してくれる楽しさと、懐かしみのあるスタンプ機能でモチベーションを保ちつつ、ラジオ体操をしてくれることが狙いです. 開発では、システム設計と3D部分やGUI実装を担当しました. 本選ではプレゼンテーションを担当しました.",
+  "name": "blackboard",
+  "title": "BlackBoard",
+  "description_jp": "Unityを使った映像作品. Blenderによる3Dモデリング、Unityでのアニメーションプログラミング、AfterEffectsでの映像編集を担当しました。",
   "description_en": "No english description",
   "youtube": ""
 }
