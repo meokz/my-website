@@ -8,9 +8,9 @@
       <div class="row">
         <div class="work_caption">
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="/works/mistflow/paper-Interaction17.pdf" target="_blank">Paper Preprint (Japanese) [PDF 2.8MB]</a></p>
-          <p><a href="/works/mistflow/presen-tct.pdf" target="_blank">Presentation (Japanese) [PDF 2.8MB]</a></p>
-          <p><a href="/works/mistflow/mistflow.pdf" target="_blank">SIGGRAPH Asia 2017 Two-page Abstract [PDF 4.5MB]</a></p>
+          <p><a href="/works/mistflow/docs/paper-Interaction17.pdf" target="_blank">Paper Preprint (Japanese) [PDF 2.8MB]</a></p>
+          <p><a href="/works/mistflow/docs/presen-tct.pdf" target="_blank">Presentation (Japanese) [PDF 2.8MB]</a></p>
+          <p><a href="/works/mistflow/docs/mistflow.pdf" target="_blank">SIGGRAPH Asia 2017 Two-page Abstract [PDF 4.5MB]</a></p>
           <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
           <p>Unity, Leap Motion</p>
           <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
@@ -29,8 +29,8 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/mistflow/img/Image.jpg">
+            <img class="work_img img-responsive" src="/works/mistflow/img/Image.jpg" >
           </a>
         </div>
           <!-- <div class="col-xs-12 col-sm-6">
@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
@@ -57,21 +58,21 @@ const project = {
 }
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
+      meta: {
+        title: 'Mistflow',
+        description: 'フォグディスプレイの霧の形状を推定し、変化するスクリーンの形状に合わせて映像を投影することを目指し、実装と開発を行いました。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/mistflow/',
+        image: 'https://meo-cs.net/works/mistflow/img/Image.jpg',
+      },
       project: project
-    }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/Image.jpg")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/sigasi.JPG")
     }
   }
 }

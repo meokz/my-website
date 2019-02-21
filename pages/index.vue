@@ -66,6 +66,12 @@ import Media from '~/components/profile/Media.vue'
 import TechnicalSkills from '~/components/profile/TechnicalSkills.vue'
 
 export default {
+  head () {
+    return {
+      titleTemplate: null,
+      title: 'Kazuki Otao / 大峠和基',
+    }
+  },
   components: {
     MyHeader,
     Profile,

@@ -68,6 +68,7 @@ ul { list-style:none; }
 </style>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import ListItem from '~/components/publication/ListItem.vue'
 
@@ -155,12 +156,20 @@ const e_print = [
 ]
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     ListItem
   },
   data() {
     return {
+      meta: {
+        title: 'Publication',
+        description: 'Publication | Kazuki Otao / 大峠和基',
+        type: 'article',
+        url: 'https://meo-cs.net/publication',
+        image: 'https://meo-cs.net/publication/img/mistflow.jpg',
+      },
       books: books,
       thesis: thesis,
       international_papers: international_papers,
