@@ -10,8 +10,8 @@
           <h3><span class="glyphicon glyphicon-link"></span>Web</h3>
           <p><a href="https://digitalnature.slis.tsukuba.ac.jp/2018/04/air-mount-retinal-projection/" target="_blank">Air Mount Retinal Projection - Digital Nature Group</a></p>
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="/works/retinalprojector/2018-siggraph-etech-retinal.pdf" target="_blank">SIGGRAPH 2018 Two-page Abstract [PDF 2.1MB]</a></p>
-          <p><a href="/works/retinalprojector/retinal_s2018_poster_rev4_outlined.pdf" target="_blank">SIGGRAPH 2018 Poster [PDF 4.3MB]</a></p>
+          <p><a href="/works/retinalprojector/docs/2018-siggraph-etech-retinal.pdf" target="_blank">SIGGRAPH 2018 Two-page Abstract [PDF 2.1MB]</a></p>
+          <p><a href="/works/retinalprojector/docs/retinal_s2018_poster_rev4_outlined.pdf" target="_blank">SIGGRAPH 2018 Poster [PDF 4.3MB]</a></p>
           <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
           <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
           <p><a href="https://doi.org/10.1145/3230744.3230810" target="_blank">Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Posters</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3230744.3230810</a>
@@ -29,8 +29,8 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/retinalprojector/img/Image.jpg">
+            <img class="work_img img-responsive" src="/works/retinalprojector/img/Image.jpg" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6"></div>
@@ -41,30 +41,34 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "retinalprojector",
-  "title": "Air Mount Retinal Projector",
-  "description_jp": "SIGGRAPH 2018でデモンストレーション展示を行いました。Seamless様に記事を掲載して頂きました。",
-  "description_en": "No english description.",
-  "youtube": "https://www.youtube.com/embed/4_jgxx-mV_o"
-}
+const title = "Air Mount Retinal Projector"
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
-    }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/Image.jpg")
+      meta: {
+        title: title,
+        description: 'Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials.',
+        type: 'article',
+        url: 'https://meo-cs.net/works/retinalprojector/',
+        image: 'https://meo-cs.net/works/retinalprojector/img/Image.jpg',
+      },
+      project: {
+        "name": "retinalprojector",
+        "title": title,
+        "description_jp": "SIGGRAPH 2018でデモンストレーション展示を行いました。Seamless様に記事を掲載して頂きました。",
+        "description_en": "Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials.",
+        "youtube": "https://www.youtube.com/embed/4_jgxx-mV_o"
+      }
     }
   }
 }

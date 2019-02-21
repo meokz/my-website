@@ -49,13 +49,7 @@ import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "mistflow",
-  "title": "MistFlow",
-  "description_jp": "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを開発しました。2017年3月に情報処理学会インタラクション2017にてデモンストレーション発表を行いました。2017年11月にACM SIGGRAPH Asia 2017にてポスター発表を行いました。Virtual Reality系の研究を取り上げるSeamless様に記事を掲載して頂きました。宇都宮大学 山本先生監修の「空中ディスプレイの開発と応用展開」にて分担執筆させて頂きました。",
-  "description_en": "This research presents a fog display for visualization of adaptive shape-changing flow.",
-  "youtube": "https://www.youtube.com/embed/YwNEVw1YgCY"
-}
+const title = 'Mistflow'
 
 export default {
   mixins: [Meta],
@@ -66,13 +60,19 @@ export default {
   data() {
     return {
       meta: {
-        title: 'Mistflow',
+        title: title,
         description: 'フォグディスプレイの霧の形状を推定し、変化するスクリーンの形状に合わせて映像を投影することを目指し、実装と開発を行いました。',
         type: 'article',
         url: 'https://meo-cs.net/works/mistflow/',
         image: 'https://meo-cs.net/works/mistflow/img/Image.jpg',
       },
-      project: project
+      project: {
+          "name": "mistflow",
+          "title": title,
+          "description_jp": "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを開発しました。2017年3月に情報処理学会インタラクション2017にてデモンストレーション発表を行いました。2017年11月にACM SIGGRAPH Asia 2017にてポスター発表を行いました。Virtual Reality系の研究を取り上げるSeamless様に記事を掲載して頂きました。宇都宮大学 山本先生監修の「空中ディスプレイの開発と応用展開」にて分担執筆させて頂きました。",
+          "description_en": "This research presents a fog display for visualization of adaptive shape-changing flow.",
+          "youtube": "https://www.youtube.com/embed/YwNEVw1YgCY"
+      }
     }
   }
 }

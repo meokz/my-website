@@ -10,8 +10,8 @@
           <h3><span class="glyphicon glyphicon-link"></span>Web</h3>
           <p><a href="http://digitalnature.slis.tsukuba.ac.jp/2017/11/glassbeads-display/" target="_blank">Aerial Image on Retroreflective Particles - Digital Nature Group</a></p>
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="/works/glassbeads/AIRP-sa17.pdf" target="_blank">SIGGRAPH Asia Two-page Abstract [PDF 2.4MB]</a></p>
-          <p><a href="/works/glassbeads/poster-sa17.pdf" target="_blank">SIGGRAPH Asia Poster [PDF 2.2MB]</a></p>
+          <p><a href="/works/glassbeads/docs/AIRP-sa17.pdf" target="_blank">SIGGRAPH Asia Two-page Abstract [PDF 2.4MB]</a></p>
+          <p><a href="/works/glassbeads/docs/poster-sa17.pdf" target="_blank">SIGGRAPH Asia Poster [PDF 2.2MB]</a></p>
           <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
           <p></p>
           <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
@@ -28,25 +28,34 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "glassbeads",
-  "title": "Glassbeads Display",
-  "description_jp": "Research Description (Writing)",
-  "description_en": "Research Description (Writing)",
-  "youtube": "https://www.youtube.com/embed/sLHKTFW9i90"
-}
+const title = "Glassbeads Display"
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
+      meta: {
+        title: title,
+        description: '半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/glassbeads/',
+        image: 'https://meo-cs.net/works/glassbeads/img/Image.jpg',
+      },
+      project: {
+        "name": "glassbeads",
+        "title": title,
+        "description_jp": "半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。",
+        "description_en": "Research Description (Writing)",
+        "youtube": "https://www.youtube.com/embed/sLHKTFW9i90"
+      }
     }
   },
   computed: {

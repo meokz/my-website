@@ -10,7 +10,7 @@
           <h3><span class="glyphicon glyphicon-link"></span>Web</h3>
           <p><a href="http://digitalnature.slis.tsukuba.ac.jp/2017/09/metamate-glass/" target="_blank">Light Field Blender - Digital Nature Group</a></p>
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="/works/lightfieldblender/2017-sa-lfb.pdf" target="_blank">SIGGRAPH Asia 2017 Technical Briefs Preprint [PDF 3.3MB]</a></p>
+          <p><a href="/works/lightfieldblender/docs/2017-sa-lfb.pdf" target="_blank">SIGGRAPH Asia 2017 Technical Briefs Preprint [PDF 3.3MB]</a></p>
           <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
           <p>Unity</p>
           <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
@@ -25,8 +25,8 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/lightfieldblender/img/Image.jpg">
+            <img class="work_img img-responsive" src="/works/lightfieldblender/img/Image.jpg" >
           </a>
         </div>
       </div>
@@ -36,25 +36,36 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
+const title = "Light Field Blender"
 const project = {
-  "name": "lightfieldblender",
-  "title": "Light Field Blender",
-  "description_jp": "This research presents a near-eye light field display for augmented reality using Transmissive Mirror Device instead of conventional optical elements such as half-mirror, free-from optics, and waveguide.",
-  "description_en": "Ars Electronica 2017で実機のデモ展示を行いました。SIGGRAPH Asia 2017で登壇発表を行いました。",
-  "youtube": "https://www.youtube.com/embed/isgaDS-qXsI"
+  
 }
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
+      meta: {
+        title: title,
+        description: 'Near-eye Aerial Light Field Rendering',
+        type: 'article',
+        url: 'https://meo-cs.net/works/lightfieldblender/',
+        image: 'https://meo-cs.net/works/lightfieldblender/img/Image.jpg',
+      },
+      project: {
+        "name": "lightfieldblender",
+        "title": title,
+        "description_jp": "This research presents a near-eye light field display for augmented reality using Transmissive Mirror Device instead of conventional optical elements such as half-mirror, free-from optics, and waveguide.",
+        "description_en": "Ars Electronica 2017で実機のデモ展示を行いました。SIGGRAPH Asia 2017で登壇発表を行いました。",
+        "youtube": "https://www.youtube.com/embed/isgaDS-qXsI"}
     }
   },
   computed: {

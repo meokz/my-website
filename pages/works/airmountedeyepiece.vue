@@ -10,9 +10,9 @@
           <h3><span class="glyphicon glyphicon-link"></span>Web</h3>
           <p><a href="http://digitalnature.slis.tsukuba.ac.jp/2017/10/air-mounted-eyepiece/" target="_blank">Air Mounted Eyepiece - Digital Nature Group</a></p>
           <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-          <p><a href="/works/airmountedeyepiece/2018-ah-ame.pdf" target="_blank">Augmented Human 2018 Long Paper Preprint [PDF 4.7MB]</a></p>
-          <p><a href="/works/airmountedeyepiece/2018-siggraph-ame.pdf" target="_blank">SIGGRAPH 2018 Two-page Abstract [PDF 2.6MB]</a></p>
-          <p><a href="/works/airmountedeyepiece/2017-arxiv-ame.pdf" target="_blank">Arxiv e-Print [PDF 1.2MB]</a></p>
+          <p><a href="/works/airmountedeyepiece/docs/2018-ah-ame.pdf" target="_blank">Augmented Human 2018 Long Paper Preprint [PDF 4.7MB]</a></p>
+          <p><a href="/works/airmountedeyepiece/docs/2018-siggraph-ame.pdf" target="_blank">SIGGRAPH 2018 Two-page Abstract [PDF 2.6MB]</a></p>
+          <p><a href="/works/airmountedeyepiece/docs/2017-arxiv-ame.pdf" target="_blank">Arxiv e-Print [PDF 1.2MB]</a></p>
 
           <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
           <p><a href="https://doi.org/10.1145/3214907.3214908" target="_blank"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Transmissive Mirror Device based Near-Eye Displays with Wide Field of View. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214908</a></p>
@@ -48,30 +48,34 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "airmountedeyepiece",
-  "title": "Air Mounted Eyepiece",
-  "description_jp": "Augmented Human 2018にて登壇発表を行いました。SIGGRAPH 2018にてデモンストレーション展示を行いました。Seamless様，PANORA VR様，Mogura VR様に記事を掲載して頂きました。",
-  "description_en": "This research presents a Transmissive Mirror Device based Head-Mounted Display. We employ TMD instead of conventional optical elements such as half-mirror, free-from optics, and waveguide. It realizes wide viewing angle because it enabled shorten optical path length between the eyeball and the virtual lens.",
-  "youtube": "https://www.youtube.com/embed/fvUzAeQL9uA"
-}
+const title = "Air Mounted Eyepiece"
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
-    }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/Image.jpg")
+      meta: {
+        title: title,
+        description: 'Transmissive Mirror Device based Head-Mounted Display',
+        type: 'article',
+        url: 'https://meo-cs.net/works/airmountedeyepiece/',
+        image: 'https://meo-cs.net/works/airmountedeyepiece/img/Image.jpg',
+      },
+      project: {
+        "name": "airmountedeyepiece",
+        "title": title,
+        "description_jp": "Augmented Human 2018にて登壇発表を行いました。SIGGRAPH 2018にてデモンストレーション展示を行いました。Seamless様，PANORA VR様，Mogura VR様に記事を掲載して頂きました。",
+        "description_en": "This research presents a Transmissive Mirror Device based Head-Mounted Display. We employ TMD instead of conventional optical elements such as half-mirror, free-from optics, and waveguide. It realizes wide viewing angle because it enabled shorten optical path length between the eyeball and the virtual lens.",
+        "youtube": "https://www.youtube.com/embed/fvUzAeQL9uA"
+      }
     }
   }
 }
