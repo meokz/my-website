@@ -25,13 +25,13 @@
       
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/mealie/img/img1.png">
+            <img class="work_img img-responsive" src="/works/mealie/img/img1.png" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL2">
-            <img class="work_img img-responsive" v-bind:src="getImageURL2" >
+          <a class="thumbnail" href="/works/mealie/img/img2.png">
+            <img class="work_img img-responsive" src="/works/mealie/img/img2.png" >
           </a>
         </div>
       </div>
@@ -41,25 +41,37 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
+
 const project = {
-  "name": "mealie",
-  "title": "学食食券オンライン予約システム 「Mealie - ミライ -」",
-  "description_jp": "Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。U-22プログラミングコンテストの最終審査会でプレゼンテーションを担当しました。",
-  "description_en": "No english description",
-  "youtube": "https://www.youtube.com/embed/MiFkeutR3ZU"
+ 
 }
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
+      meta: {
+        title: "Mealie",
+        description: 'Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/mealie/',
+        image: 'https://meo-cs.net/works/mealie/img/img1.png',
+      },
+      project: {
+        "name": "mealie",
+        "title": "学食食券オンライン予約システム 「Mealie - ミライ -」",
+        "description_jp": "Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。U-22プログラミングコンテストの最終審査会でプレゼンテーションを担当しました。",
+        "description_en": "No english description",
+        "youtube": "https://www.youtube.com/embed/MiFkeutR3ZU"
+      }
     }
   },
   computed: {
