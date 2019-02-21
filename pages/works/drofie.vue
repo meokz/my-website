@@ -20,23 +20,23 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/drofie/img/img1.png">
+            <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL2">
-            <img class="work_img img-responsive" v-bind:src="getImageURL2" >
+          <a class="thumbnail" href="/works/drofie/img/img2.jpg">
+            <img class="work_img img-responsive" src="/works/drofie/img/img2.jpg" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL3">
-            <img class="work_img img-responsive" v-bind:src="getImageURL3" >
+          <a class="thumbnail" href="/works/drofie/img/img3.png">
+            <img class="work_img img-responsive" src="/works/drofie/img/img3.png" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL4">
-            <img class="work_img img-responsive" v-bind:src="getImageURL4" >
+          <a class="thumbnail" href="/works/drofie/img/img4.png">
+            <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
           </a>
         </div>
       </div>
@@ -46,25 +46,35 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "drofie",
-  "title": "Drofie",
-  "description_jp": "drofieは観光地などに設置されたドローンで特別な自撮りを撮影し、旅の思い出を作ることのできるサービスです。Androidアプリを立ち上げると地図上に撮影スポットが表示されます。撮影スポットでドローンの種類（空撮、水中など）を選ぶと、ドローンからの映像がスマホの画面にリアルタイムで表示されます。あとは、ポーズを決めてシャッターを切ると、迫力のある自撮りを撮ることができます。Androidアプリのプログラミングを担当しました。",
-  "description_en": "No english description.",
-  "youtube": ""
-}
+
+const title = 'Drofie'
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
+      meta: {
+        title: title,
+        description: 'drofieは観光地などに設置されたドローンで特別な自撮りを撮影し、旅の思い出を作ることのできるサービスです。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/drofie/',
+        image: 'https://meo-cs.net/works/drofie/img/img1.png',
+      },
+      project: {
+        "name": "drofie",
+        "title": title,
+        "description_jp": "drofieは観光地などに設置されたドローンで特別な自撮りを撮影し、旅の思い出を作ることのできるサービスです。Androidアプリを立ち上げると地図上に撮影スポットが表示されます。撮影スポットでドローンの種類（空撮、水中など）を選ぶと、ドローンからの映像がスマホの画面にリアルタイムで表示されます。あとは、ポーズを決めてシャッターを切ると、迫力のある自撮りを撮ることができます。Androidアプリのプログラミングを担当しました。",
+        "description_en": "No english description.",
+        "youtube": ""
+      }
     }
   },
   computed: {

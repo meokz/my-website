@@ -82,23 +82,6 @@ export default {
         "youtube": "https://www.youtube.com/embed/MoNLpyuXeA8"
       }
     }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img1.jpg")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img4.jpg")
-    },
-    getImageURL3: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img2.jpg")
-    },
-    getImageURL4: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img3.jpg")
-    },
-    getImageURL5: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img5.png")
-    }
   }
 }
 </script>

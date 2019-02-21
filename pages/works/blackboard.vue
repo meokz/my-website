@@ -18,13 +18,13 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/blackboard/img/img1.jpg">
+            <img class="work_img img-responsive" src="/works/blackboard/img/img1.jpg" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL2">
-            <img class="work_img img-responsive" v-bind:src="getImageURL2" >
+          <a class="thumbnail" href="/works/blackboard/img/img2.jpg">
+            <img class="work_img img-responsive" src="/works/blackboard/img/img2.jpg" >
           </a>
         </div>
       </div>
@@ -34,25 +34,34 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "blackboard",
-  "title": "BlackBoard",
-  "description_jp": "Unityを使った映像作品. Blenderによる3Dモデリング、Unityでのアニメーションプログラミング、AfterEffectsでの映像編集を担当しました。",
-  "description_en": "No english description",
-  "youtube": ""
-}
+const title = "BlackBoard"
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
+      meta: {
+        title: title,
+        description: 'Unityを使った映像作品。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/blackboard/',
+        image: 'https://meo-cs.net/works/blackboard/img/img1.jpg',
+      },
+      project: {
+        "name": "blackboard",
+        "title": title,
+        "description_jp": "Unityを使った映像作品. Blenderによる3Dモデリング、Unityでのアニメーションプログラミング、AfterEffectsでの映像編集を担当しました。",
+        "description_en": "No english description",
+        "youtube": ""
+      }
     }
   },
   computed: {

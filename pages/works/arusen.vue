@@ -16,15 +16,15 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/arusen/img/img1.png">
+            <img class="work_img img-responsive" src="/works/arusen/img/img1.png" >
           </a>
         </div>
-          <!-- <div class="col-xs-12 col-sm-6">
-            <a class="thumbnail" href="getImageURL2">
-              <img class="work_img img-responsive" v-bind:src="getImageURL2" >
-            </a>
-          </div> -->
+        <div class="col-xs-12 col-sm-6">
+          <a class="thumbnail" href="/works/arusen/img/img2.jpg">
+            <img class="work_img img-responsive" src="/works/arusen/img/img2.jpg" >
+          </a>
+        </div>
       </div>
       
     </section>
@@ -32,16 +32,11 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "arusen",
-  "title": "あるせん",
-  "description_jp": "高専でありがちな川柳をGoogle Chromeの上から投稿・閲覧・いいねできるChrome拡張機能です。",
-  "description_en": "No english description",
-  "youtube": ""
-}
+const title = 'あるせん'
 
 export default {
   components: {
@@ -50,15 +45,20 @@ export default {
   },
   data() {
     return {
-      project: project
-    }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img2.jpg")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/sigasi.JPG")
+      meta: {
+        title: title,
+        description: '高専でありがちな川柳をGoogle Chromeの上から投稿・閲覧・いいねできるChrome拡張機能です。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/arusen/',
+        image: 'https://meo-cs.net/works/arusen/img/img_top.jpg',
+      },
+      project: {
+        "name": "arusen",
+        "title": title,
+        "description_jp": "高専でありがちな川柳をGoogle Chromeの上から投稿・閲覧・いいねできるChrome拡張機能です。",
+        "description_en": "No english description",
+        "youtube": ""
+      }
     }
   }
 }

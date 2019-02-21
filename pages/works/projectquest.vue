@@ -18,23 +18,23 @@
 
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
+          <a class="thumbnail" href="/works/projectquest/img/main.png">
+            <img class="work_img img-responsive" src="/works/projectquest/img/main.png" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL2">
-            <img class="work_img img-responsive" v-bind:src="getImageURL2" >
+          <a class="thumbnail" href="/works/projectquest/img/abstract.png">
+            <img class="work_img img-responsive" src="/works/projectquest/img/abstract.png" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL3">
-            <img class="work_img img-responsive" v-bind:src="getImageURL3" >
+          <a class="thumbnail" href="/works/projectquest/img/detail.png">
+            <img class="work_img img-responsive" src="/works/projectquest/img/detail.png" >
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL4">
-            <img class="work_img img-responsive" v-bind:src="getImageURL4" >
+          <a class="thumbnail" href="/works/projectquest/img/projectquest.png">
+            <img class="work_img img-responsive" src="/works/projectquest/img/projectquest.png" >
           </a>
         </div>
       </div>
@@ -44,39 +44,34 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "projectquest",
-  "title": "ProjectQuest",
-  "description_jp": "ProjectQuestは，与えられたシステム開発のお題をマッチングしたエンジニア/デザイナと一緒に取り組むことで，様々な人と出会いつつ技術を高めることができるWebサービスです。",
-  "description_en": "No english description.",
-  "youtube": ""
-}
+const title = "ProjectQuest"
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
-    }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/main.png")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/abstract.png")
-    },
-    getImageURL3: function() {
-      return require("~/assets/works/" + this.project.name + "/img/detail.png")
-    },
-    getImageURL4: function() {
-      return require("~/assets/works/" + this.project.name + "/img/projectquest.png")
+      meta: {
+        title: title,
+        description: 'ProjectQuestは，与えられたシステム開発のお題をマッチングしたエンジニア/デザイナと一緒に取り組むことで，様々な人と出会いつつ技術を高めることができるWebサービスです。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/projectquest/',
+        image: 'https://meo-cs.net/works/projectquest/img/projectquest.png',
+      },
+      project: {
+        "name": "projectquest",
+        "title": title,
+        "description_jp": "ProjectQuestは，与えられたシステム開発のお題をマッチングしたエンジニア/デザイナと一緒に取り組むことで，様々な人と出会いつつ技術を高めることができるWebサービスです。",
+        "description_en": "No english description.",
+        "youtube": ""
+      }
     }
   }
 }
