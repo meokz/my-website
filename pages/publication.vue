@@ -7,37 +7,37 @@
       <h2>Publication</h2>
       <div>
         <h3>Book - 書籍</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in books" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
         <h3>Thesis - 卒業論文</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in thesis" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
         <h3>International Conference Papers - 査読あり国際会議論文</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in international_papers" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
         <h3>International Conference Posters - 査読あり国際会議ポスター発表</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in posters" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
         <h3>International Conference Demos - 査読あり国際会議デモ発表</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in demos" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
         <h3>International Conference Invited Talk - 国際会議招待講演</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in invited_talk" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
         <h3>Domestic Conference - 国内会議</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in domestic" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
         <h3>e-Print</h3>
-        <ul>
+        <ol>
           <ListItem v-for="item in e_print" v-bind:key="item.id" v-bind:item="item" />
-        </ul>
+        </ol>
       </div>
     </section>
 

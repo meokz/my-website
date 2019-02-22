@@ -8,9 +8,9 @@
     </header>
 
     <section class="container">
-      <div>
+      <!-- <div>
         Jump to -> Research / Product / Entertainment / Hackathon / ArtWork
-      </div>
+      </div> -->
 
       <div>
         <h2>Research</h2>
@@ -182,6 +182,7 @@ h3 {
 </style>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import Work from '~/components/works/Work.vue'
 
@@ -414,12 +415,20 @@ const artwork = [
 ]
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     Work
   },
   data() {
     return {
+      meta: {
+        title: "Project",
+        description: 'Kazuki OTAO Portforlio.',
+        type: 'article',
+        url: 'https://meo-cs.net/works/img/jumbotron5.jpg',
+        image: 'https://meo-cs.net/works/img/jumbotron5.jpg',
+      },
       research: research,
       product: product,
       entertainment: entertainment,

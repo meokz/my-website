@@ -4,9 +4,9 @@
     <div>
       <div>
         <h3>Contest</h3>
-        <ul>
+        <ol>
           <Project v-for="contest in contests" v-bind:key="contest.title" v-bind:project="contest"/>
-        </ul>
+        </ol>
       </div>
     </div>
   </div> 

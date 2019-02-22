@@ -1,7 +1,7 @@
 <template>
   <li class="row">
     <div class="col-xs-7 col-sm-9 no-padding-left">
-      <p class="small_p" v-html="project.title"></p>
+      <p v-html="project.title"></p>
     </div>
     <div class="col-xs-5 col-sm-3">
       <a class="thumbnail" v-bind:href="project.url">
@@ -15,6 +15,10 @@
 
 .no-padding-left {
     padding-left: 0px;
+}
+
+.row {
+  padding: 5px;
 }
 
 </style>
