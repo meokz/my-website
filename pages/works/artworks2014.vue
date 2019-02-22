@@ -61,22 +61,31 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "artworks2014",
-  "title": "ArtWorks 2014",
-}
+const title = 'ArtWorks 2014'
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
+       meta: {
+        title: title,
+        description: 'ArtWorks2014',
+        type: 'article',
+        url: 'https://meo-cs.net/works/artworks2014/',
+        image: 'https://meo-cs.net/works/artworks2014/img/piano1.jpg',
+      },
+      project: {
+        "name": "artworks2014",
+        "title": title,
+      }
     }
   },
   computed: {

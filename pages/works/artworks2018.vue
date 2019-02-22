@@ -10,8 +10,8 @@
           <h3>Abstract 2</h3>
           <p><span class="glyphicon glyphicon-wrench"></span> Modeling: Grasshopper (Rhinoceros), Rendering: Cycles (Blender)</p>
           <p><span class="glyphicon glyphicon-time"></span> 2018/06/26</p>
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img v-bind:src="getImageURL" class="img-responsive">
+          <a class="thumbnail" href="/works/artworks2018/img/abstract_2.jpg">
+            <img src="/works/artworks2018/img/abstract_2.jpg" class="img-responsive">
           </a>
         </div>
       </div>
@@ -21,8 +21,8 @@
           <h3>Abstract 1</h3>
           <p><span class="glyphicon glyphicon-wrench"></span> Modeling: Grasshopper (Rhinoceros), Rendering: Cycles (Blender)</p>
           <p><span class="glyphicon glyphicon-time"></span> 2018/06/25</p>
-          <a class="thumbnail" v-bind:href="getImageURL2">
-            <img v-bind:src="getImageURL2" class="img-responsive">
+          <a class="thumbnail" href="/works/artworks2018/img/abstract_1.jpg">
+            <img src="/works/artworks2018/img/abstract_1.jpg" class="img-responsive">
           </a>
         </div>
       </div>
@@ -31,30 +31,31 @@
 </template>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "artworks2018",
-  "title": "ArtWorks 2018",
-}
+const title = "ArtWorks 2018"
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
-    }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/abstract_1.jpg")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/abstract_2.jpg")
+      meta: {
+        title: title,
+        description: 'ArtWorks 2018',
+        type: 'article',
+        url: 'https://meo-cs.net/works/artworks2018/',
+        image: 'https://meo-cs.net/works/artworks2018/img/abstract_2.jpg',
+      },
+      project: {
+        "name": "artworks2018",
+        "title": title,
+      }
     }
   }
 }
