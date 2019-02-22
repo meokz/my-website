@@ -5,14 +5,7 @@
 </template>
 
 <style>
-
-a:link    { color: #000000; }
-a:visited { color: #000000; }
-a:hover   { color: #ff0000; }
-a:active  { color: #ff8000; }
-
-.container {
-    background: #FFFFFF;
-}
-
+@media (min-width:  768px) { .container { width: 750px; } }
+@media (min-width:  992px) { .container { width: 750px; } } 
+@media (min-width: 1200px) { .container { width: 750px; } }
 </style>

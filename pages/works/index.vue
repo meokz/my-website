@@ -3,15 +3,11 @@
     <MyHeader/>
     
     <header class="jumbotron">
-      <section class="container">
-      </section>
+    　<div class="container">
+    　</div>
     </header>
 
     <section class="container">
-      <div>
-        Jump to -> Research / Product / Entertainment / Hackathon / ArtWork
-      </div>
-
       <div>
         <h2>Research</h2>
         <div>
@@ -142,7 +138,6 @@ header.jumbotron {
   background-position: center 60%;
   background-size: cover;
   margin-bottom: 10px;
-  color: #ffffff;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
@@ -182,6 +177,7 @@ h3 {
 </style>
 
 <script>
+import Meta from '~/assets/Meta.js'
 import MyHeader from '~/components/MyHeader.vue'
 import Work from '~/components/works/Work.vue'
 
@@ -414,12 +410,20 @@ const artwork = [
 ]
 
 export default {
+  mixins: [Meta],
   components: {
     MyHeader,
     Work
   },
   data() {
     return {
+      meta: {
+        title: "Project",
+        description: 'Kazuki OTAO Portforlio.',
+        type: 'article',
+        url: 'https://meo-cs.net/works/img/jumbotron5.jpg',
+        image: 'https://meo-cs.net/works/img/jumbotron5.jpg',
+      },
       research: research,
       product: product,
       entertainment: entertainment,

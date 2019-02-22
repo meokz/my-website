@@ -3,17 +3,17 @@
     <h2>Media</h2>
     <div>
       <h3>Radio</h3>
-      <ul>
+      <ol>
         <MediaItem v-for="item in radio" v-bind:key="item.id" v-bind:item="item" />
-      </ul>
+      </ol>
       <h3>Web Radio</h3>
-      <ul>
+      <ol>
         <MediaItem v-for="item in webradio" v-bind:key="item.id" v-bind:item="item" />
-      </ul>
+      </ol>
       <h3>Web</h3>
-      <ul>
+      <ol>
         <MediaItem v-for="item in web" v-bind:key="item.id" v-bind:item="item" />
-      </ul>
+      </ol>
     </div>
   </div>
 </template>

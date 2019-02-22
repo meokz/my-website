@@ -2,9 +2,9 @@
   <div class="exhibition">
     <h2>Exhibition</h2>
     <div>
-      <ul>
+      <ol>
         <Project v-for="exhibition in exhibitions" v-bind:key="exhibition.title" v-bind:project="exhibition"/>
-      </ul>
+      </ol>
     </div>
   </div> 
 </template>

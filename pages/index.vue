@@ -1,30 +1,26 @@
 <template>
-  <div id="app">
-    <MyHeader/>
-    
-    <section class="container">
-      <button v-on:click="toggle">Japansese / English</button>
+  <div>
+    <button v-on:click="toggle">Japansese / English</button>
 
-      <Profile v-bind:isEnglish="isEnglish"/>
+    <Profile v-bind:isEnglish="isEnglish"/>
 
-      <Projects v-bind:isEnglish="isEnglish"/>
+    <Projects v-bind:isEnglish="isEnglish"/>
 
-      <Career v-bind:isEnglish="isEnglish"/>
+    <Career v-bind:isEnglish="isEnglish"/>
 
-      <Link />
+    <Link />
 
-      <Publication />
+    <Publication />
 
-      <Exhibition />
+    <Exhibition />
 
-      <Achievement />
+    <Achievement />
 
-      <Media />
+    <Media />
 
-      <TechnicalSkills />
+    <TechnicalSkills />
 
-    </section>
-  </div> <!-- end <div id="app"> -->
+  </div>
 </template>
 
 <style>
@@ -54,7 +50,6 @@ ul { list-style:none; }
 </style>
 
 <script>
-import MyHeader from '~/components/MyHeader.vue'
 import Profile from '~/components/profile/Profile.vue'
 import Projects from '~/components/profile/Projects.vue'
 import Career from '~/components/profile/Career.vue'
@@ -66,8 +61,14 @@ import Media from '~/components/profile/Media.vue'
 import TechnicalSkills from '~/components/profile/TechnicalSkills.vue'
 
 export default {
+  head () {
+    return {
+      titleTemplate: null,
+      title: 'Kazuki Otao / 大峠和基',
+    }
+  },
+  layout: 'base',
   components: {
-    MyHeader,
     Profile,
     Projects,
     Career,

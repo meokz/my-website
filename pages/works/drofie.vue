@@ -1,85 +1,76 @@
 <template>
-  <div id="app">
-    <MyHeader/>
+  <div>
+    <WorkPage v-bind:project="project"/>
 
-    <section class="container">
-      <WorkPage v-bind:project="project"/>
-
-      <div class="row">
-        <div class="work_caption">
-          <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
-          <p>Android Programming</p>
-          <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
-          <p>Android Studio etc.</p>
-          <h3><span class="glyphicon glyphicon-link"></span>外部リンク</h3>
-          <p><a href="http://perfectstarperfect.style/post/150665140897/drofie" target="_blank">ぺんぎんらぼ - drofie</a></p>
-          <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
-          <p>サイバーエージェントKyotoHack 特別賞</p>
-        </div>
+    <div class="row">
+      <div class="work_caption">
+        <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
+        <p>Android Programming</p>
+        <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
+        <p>Android Studio etc.</p>
+        <h3><span class="glyphicon glyphicon-link"></span>外部リンク</h3>
+        <p><a href="http://perfectstarperfect.style/post/150665140897/drofie" target="_blank">ぺんぎんらぼ - drofie</a></p>
+        <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
+        <p>サイバーエージェントKyotoHack 特別賞</p>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL">
-            <img class="work_img img-responsive" v-bind:src="getImageURL" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL2">
-            <img class="work_img img-responsive" v-bind:src="getImageURL2" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL3">
-            <img class="work_img img-responsive" v-bind:src="getImageURL3" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" v-bind:href="getImageURL4">
-            <img class="work_img img-responsive" v-bind:src="getImageURL4" >
-          </a>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img1.png">
+          <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
+        </a>
       </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img2.jpg">
+          <img class="work_img img-responsive" src="/works/drofie/img/img2.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img3.png">
+          <img class="work_img img-responsive" src="/works/drofie/img/img3.png" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img4.png">
+          <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
+        </a>
+      </div>
+    </div>
       
-    </section>
   </div>
 </template>
 
 <script>
-import MyHeader from '~/components/MyHeader.vue'
+import Meta from '~/assets/Meta.js'
 import WorkPage from '~/components/works/WorkPage.vue'
 
-const project = {
-  "name": "drofie",
-  "title": "Drofie",
-  "description_jp": "drofieは観光地などに設置されたドローンで特別な自撮りを撮影し、旅の思い出を作ることのできるサービスです。Androidアプリを立ち上げると地図上に撮影スポットが表示されます。撮影スポットでドローンの種類（空撮、水中など）を選ぶと、ドローンからの映像がスマホの画面にリアルタイムで表示されます。あとは、ポーズを決めてシャッターを切ると、迫力のある自撮りを撮ることができます。Androidアプリのプログラミングを担当しました。",
-  "description_en": "No english description.",
-  "youtube": ""
-}
+
+const title = 'Drofie'
 
 export default {
+  mixins: [Meta],
+  layout: 'project',
   components: {
-    MyHeader,
     WorkPage
   },
   data() {
     return {
-      project: project
+      meta: {
+        title: title,
+        description: 'drofieは観光地などに設置されたドローンで特別な自撮りを撮影し、旅の思い出を作ることのできるサービスです。',
+        type: 'article',
+        url: 'https://meo-cs.net/works/drofie/',
+        image: 'https://meo-cs.net/works/drofie/img/img1.png',
+      },
+      project: {
+        "name": "drofie",
+        "title": title,
+        "description_jp": "drofieは観光地などに設置されたドローンで特別な自撮りを撮影し、旅の思い出を作ることのできるサービスです。Androidアプリを立ち上げると地図上に撮影スポットが表示されます。撮影スポットでドローンの種類（空撮、水中など）を選ぶと、ドローンからの映像がスマホの画面にリアルタイムで表示されます。あとは、ポーズを決めてシャッターを切ると、迫力のある自撮りを撮ることができます。Androidアプリのプログラミングを担当しました。",
+        "description_en": "No english description.",
+        "youtube": ""
+      }
     }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img1.png")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img2.jpg")
-    },
-    getImageURL3: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img3.png")
-    },
-    getImageURL4: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img4.png")
-    },
   }
 }
 </script>
