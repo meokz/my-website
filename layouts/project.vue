@@ -3,6 +3,7 @@
     <MyHeader/>
 
     <section class="container">
+      <!-- 各ページのテンプレート挿入 -->
       <nuxt/>
     </section>
   </div>
@@ -21,3 +22,13 @@ a:active  { color: #ff8000; }
 }
 
 </style>
+
+<script>
+import MyHeader from '~/components/MyHeader.vue'
+
+export default {
+  components: {
+    MyHeader,
+  },
+}
+</script>

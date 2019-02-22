@@ -1,46 +1,43 @@
 <template>
-  <div id="app">
-    <MyHeader/>
+  <div>
 
-    <section class="container">
-      <WorkPage v-bind:project="project"/>
+    <WorkPage v-bind:project="project"/>
 
-      <div class="row">
-        <div class="work_caption">
-          <h3><span class="glyphicon glyphicon-link"></span>外部リンク</h3>
-          <p><a href="https://kosen.team-lab.com/" target="_blank">チームラボオンラインハッカソン</a> (2015)</p>
-          <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
-          <p>チームラボオンラインハッカソン (2015) 優秀賞</p>
-        </div>
+    <div class="row">
+      <div class="work_caption">
+        <h3><span class="glyphicon glyphicon-link"></span>外部リンク</h3>
+        <p><a href="https://kosen.team-lab.com/" target="_blank">チームラボオンラインハッカソン</a> (2015)</p>
+        <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
+        <p>チームラボオンラインハッカソン (2015) 優秀賞</p>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/arusen/img/img1.png">
-            <img class="work_img img-responsive" src="/works/arusen/img/img1.png" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/arusen/img/img2.jpg">
-            <img class="work_img img-responsive" src="/works/arusen/img/img2.jpg" >
-          </a>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/arusen/img/img1.png">
+          <img class="work_img img-responsive" src="/works/arusen/img/img1.png" >
+        </a>
       </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/arusen/img/img2.jpg">
+          <img class="work_img img-responsive" src="/works/arusen/img/img2.jpg" >
+        </a>
+      </div>
+    </div>
       
-    </section>
   </div>
 </template>
 
 <script>
 import Meta from '~/assets/Meta.js'
-import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
 const title = 'あるせん'
 
 export default {
+  mixins: [Meta],
+  layout: 'project',
   components: {
-    MyHeader,
     WorkPage
   },
   data() {

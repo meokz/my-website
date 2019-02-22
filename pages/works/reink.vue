@@ -1,83 +1,78 @@
 <template>
-  <div id="app">
-    <MyHeader/>
+  <div>
+    <WorkPage v-bind:project="project"/>
 
-    <section class="container">
-      <WorkPage v-bind:project="project"/>
-
-      <div class="row">
-        <div class="work_caption">
-          <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
-          <p>Scripting / Motion Graphics / Projection Mapping</p>
-          <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
-          <p>Unity / C# / Blender / MeshWarpServer etc.</p>
-          <h3><span class="glyphicon glyphicon-link"></span>Link</h3>
-          <p><a href="http://meokz.hatenablog.com/entry/2015/reink" target="_blank">Unityでプロジェクションマッピングをした話 - めおしーえす</a>
-          <p><a href="http://maoudamashii.jokersounds.com/">全曲無料・フリー音楽素材/魔王魂</a>（音源を使用させて頂きました）</p>
-          <h3><span class="glyphicon glyphicon-flag"></span>Exhibition</h3>
-          <p>徳山高専 高専祭, 山口, 2015.10.31-11.1</p>
-          <h3><span class="glyphicon glyphicon-leaf"></span>Media</h3>
-          <p><a href="/works/reink/img/img_paper.jpg" target="_blank">工場模型の姿ゲームで変幻, 中国新聞(山口県), 2015.10</a></p>
-        </div>
+    <div class="row">
+      <div class="work_caption">
+        <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
+        <p>Scripting / Motion Graphics / Projection Mapping</p>
+        <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
+        <p>Unity / C# / Blender / MeshWarpServer etc.</p>
+        <h3><span class="glyphicon glyphicon-link"></span>Link</h3>
+        <p><a href="http://meokz.hatenablog.com/entry/2015/reink" target="_blank">Unityでプロジェクションマッピングをした話 - めおしーえす</a>
+        <p><a href="http://maoudamashii.jokersounds.com/">全曲無料・フリー音楽素材/魔王魂</a>（音源を使用させて頂きました）</p>
+        <h3><span class="glyphicon glyphicon-flag"></span>Exhibition</h3>
+        <p>徳山高専 高専祭, 山口, 2015.10.31-11.1</p>
+        <h3><span class="glyphicon glyphicon-leaf"></span>Media</h3>
+        <p><a href="/works/reink/img/img_paper.jpg" target="_blank">工場模型の姿ゲームで変幻, 中国新聞(山口県), 2015.10</a></p>
       </div>
+    </div>
 
-      <div class="row">
-        <iframe src="//www.slideshare.net/slideshow/embed_code/key/xmg1coWOXaK5zs" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kaootao/lt-83901478" title="徳山高専での 『機械・情報・建築分野の融合作品』 制作について (春日LT)" target="_blank">徳山高専での 『機械・情報・建築分野の融合作品』 制作について (春日LT)</a> </strong> from <strong><a href="https://www.slideshare.net/kaootao" target="_blank">Kazuki Otao</a></strong> </div>
-      </div>
+    <div class="row">
+      <iframe src="//www.slideshare.net/slideshow/embed_code/key/xmg1coWOXaK5zs" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kaootao/lt-83901478" title="徳山高専での 『機械・情報・建築分野の融合作品』 制作について (春日LT)" target="_blank">徳山高専での 『機械・情報・建築分野の融合作品』 制作について (春日LT)</a> </strong> from <strong><a href="https://www.slideshare.net/kaootao" target="_blank">Kazuki Otao</a></strong> </div>
+    </div>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/reink/img/img_top.jpg">
-            <img class="work_img img-responsive" src="/works/reink/img/img_top.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/reink/img/img4.jpg">
-            <img class="work_img img-responsive" src="/works/reink/img/img4.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/reink/img/img2.jpg">
-            <img class="work_img img-responsive" src="/works/reink/img/img2.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/reink/img/img3.jpg">
-            <img class="work_img img-responsive" src="/works/reink/img/img3.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/reink/img/img_uma.jpg">
-            <img class="work_img img-responsive" src="/works/reink/img/img_uma.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/reink/img/img_hashi.jpg">
-            <img class="work_img img-responsive" src="/works/reink/img/img_hashi.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/reink/img/img_projection.jpg">
-            <img class="work_img img-responsive" src="/works/reink/img/img_projection.jpg" >
-          </a>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/reink/img/img_top.jpg">
+          <img class="work_img img-responsive" src="/works/reink/img/img_top.jpg" >
+        </a>
       </div>
-      
-    </section>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/reink/img/img4.jpg">
+          <img class="work_img img-responsive" src="/works/reink/img/img4.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/reink/img/img2.jpg">
+          <img class="work_img img-responsive" src="/works/reink/img/img2.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/reink/img/img3.jpg">
+          <img class="work_img img-responsive" src="/works/reink/img/img3.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/reink/img/img_uma.jpg">
+          <img class="work_img img-responsive" src="/works/reink/img/img_uma.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/reink/img/img_hashi.jpg">
+          <img class="work_img img-responsive" src="/works/reink/img/img_hashi.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/reink/img/img_projection.jpg">
+          <img class="work_img img-responsive" src="/works/reink/img/img_projection.jpg" >
+        </a>
+      </div>
+    </div>
+    
   </div>
 </template>
 
 <script>
 import Meta from '~/assets/Meta.js'
-import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
 const title = "Re:ink"
 
 export default {
   mixins: [Meta],
+  layout: 'project',
   components: {
-    MyHeader,
     WorkPage
   },
   data() {

@@ -42,7 +42,6 @@
 
 <script>
 import Meta from '~/assets/Meta.js'
-import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
 const title = 'Mistflow'
@@ -51,7 +50,6 @@ export default {
   mixins: [Meta],
   layout: 'project',
   components: {
-    MyHeader,
     WorkPage
   },
   data() {

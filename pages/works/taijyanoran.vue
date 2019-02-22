@@ -1,64 +1,59 @@
 <template>
-  <div id="app">
-    <MyHeader/>
+  <div>
+    <WorkPage v-bind:project="project"/>
 
-    <section class="container">
-      <WorkPage v-bind:project="project"/>
-
-      <div class="row">
-        <div class="work_caption">
-          <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
-          <p>Programming / UI Design / AR / 3D Modeling / Network</p>
-          <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
-          <p>Unity / C# / Blender etc.</p>
-          <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
-          <p>2014年 高専祭メイン企画</p>
-        </div>
+    <div class="row">
+      <div class="work_caption">
+        <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
+        <p>Programming / UI Design / AR / 3D Modeling / Network</p>
+        <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
+        <p>Unity / C# / Blender etc.</p>
+        <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
+        <p>2014年 高専祭メイン企画</p>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/taijyanoran/img/img1.jpg">
-            <img class="work_img img-responsive" src="/works/taijyanoran/img/img1.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/taijyanoran/img/img2.jpg">
-            <img class="work_img img-responsive" src="/works/taijyanoran/img/img2.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/taijyanoran/img/img3.jpg">
-            <img class="work_img img-responsive" src="/works/taijyanoran/img/img3.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/taijyanoran/img/img4.jpg">
-            <img class="work_img img-responsive" src="/works/taijyanoran/img/img4.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/taijyanoran/img/img5.jpg">
-            <img class="work_img img-responsive" src="/works/taijyanoran/img/img5.jpg" >
-          </a>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/taijyanoran/img/img1.jpg">
+          <img class="work_img img-responsive" src="/works/taijyanoran/img/img1.jpg" >
+        </a>
       </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/taijyanoran/img/img2.jpg">
+          <img class="work_img img-responsive" src="/works/taijyanoran/img/img2.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/taijyanoran/img/img3.jpg">
+          <img class="work_img img-responsive" src="/works/taijyanoran/img/img3.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/taijyanoran/img/img4.jpg">
+          <img class="work_img img-responsive" src="/works/taijyanoran/img/img4.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/taijyanoran/img/img5.jpg">
+          <img class="work_img img-responsive" src="/works/taijyanoran/img/img5.jpg" >
+        </a>
+      </div>
+    </div>
       
-    </section>
   </div>
 </template>
 
 <script>
 import Meta from '~/assets/Meta.js'
-import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
 const title = "大蛇の乱"
 
 export default {
   mixins: [Meta],
+  layout: 'project',
   components: {
-    MyHeader,
     WorkPage
   },
   data() {

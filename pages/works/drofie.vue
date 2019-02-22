@@ -1,53 +1,48 @@
 <template>
-  <div id="app">
-    <MyHeader/>
+  <div>
+    <WorkPage v-bind:project="project"/>
 
-    <section class="container">
-      <WorkPage v-bind:project="project"/>
-
-      <div class="row">
-        <div class="work_caption">
-          <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
-          <p>Android Programming</p>
-          <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
-          <p>Android Studio etc.</p>
-          <h3><span class="glyphicon glyphicon-link"></span>外部リンク</h3>
-          <p><a href="http://perfectstarperfect.style/post/150665140897/drofie" target="_blank">ぺんぎんらぼ - drofie</a></p>
-          <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
-          <p>サイバーエージェントKyotoHack 特別賞</p>
-        </div>
+    <div class="row">
+      <div class="work_caption">
+        <h3><span class="glyphicon glyphicon-user"></span>担当</h3>
+        <p>Android Programming</p>
+        <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
+        <p>Android Studio etc.</p>
+        <h3><span class="glyphicon glyphicon-link"></span>外部リンク</h3>
+        <p><a href="http://perfectstarperfect.style/post/150665140897/drofie" target="_blank">ぺんぎんらぼ - drofie</a></p>
+        <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
+        <p>サイバーエージェントKyotoHack 特別賞</p>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/drofie/img/img1.png">
-            <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/drofie/img/img2.jpg">
-            <img class="work_img img-responsive" src="/works/drofie/img/img2.jpg" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/drofie/img/img3.png">
-            <img class="work_img img-responsive" src="/works/drofie/img/img3.png" >
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <a class="thumbnail" href="/works/drofie/img/img4.png">
-            <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
-          </a>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img1.png">
+          <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
+        </a>
       </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img2.jpg">
+          <img class="work_img img-responsive" src="/works/drofie/img/img2.jpg" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img3.png">
+          <img class="work_img img-responsive" src="/works/drofie/img/img3.png" >
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <a class="thumbnail" href="/works/drofie/img/img4.png">
+          <img class="work_img img-responsive" src="/works/drofie/img/img1.png" >
+        </a>
+      </div>
+    </div>
       
-    </section>
   </div>
 </template>
 
 <script>
 import Meta from '~/assets/Meta.js'
-import MyHeader from '~/components/MyHeader.vue'
 import WorkPage from '~/components/works/WorkPage.vue'
 
 
@@ -55,8 +50,8 @@ const title = 'Drofie'
 
 export default {
   mixins: [Meta],
+  layout: 'project',
   components: {
-    MyHeader,
     WorkPage
   },
   data() {
@@ -76,20 +71,6 @@ export default {
         "youtube": ""
       }
     }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img1.png")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img2.jpg")
-    },
-    getImageURL3: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img3.png")
-    },
-    getImageURL4: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img4.png")
-    },
   }
 }
 </script>
