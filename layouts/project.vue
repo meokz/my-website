@@ -16,6 +16,10 @@ a:visited { color: #000000; }
 a:hover   { color: #ff0000; }
 a:active  { color: #ff8000; }
 
+</style>
+
+<style scoped>
+
 .container {
     background: #FFFFFF;
     padding: 0px 50px 50px 50px;

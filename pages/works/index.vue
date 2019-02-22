@@ -3,15 +3,11 @@
     <MyHeader/>
     
     <header class="jumbotron">
-      <section class="container">
-      </section>
+    　<div class="container">
+    　</div>
     </header>
 
     <section class="container">
-      <!-- <div>
-        Jump to -> Research / Product / Entertainment / Hackathon / ArtWork
-      </div> -->
-
       <div>
         <h2>Research</h2>
         <div>
@@ -139,11 +135,10 @@
 <style>
 header.jumbotron {
   background: url("../../assets/works/img/jumbotron5.jpg");
-  /* background-position: center 60%; */
+  background-position: center 60%;
   background-size: cover;
   margin-bottom: 10px;
-  color: #ffffff;
-  /* text-shadow: 0px 0px 20px rgba(0, 0, 0, 1); */
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 header .container {
