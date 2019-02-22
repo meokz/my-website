@@ -4,6 +4,7 @@
     <div>
       <ProjectDetail v-for="work in projects" v-bind:key="work.name" v-bind:work="work" v-bind:isEnglish="isEnglish"/>
     </div>
+    <p align="right"><a href="/works">{{detail}} All Project</a></p>
   </div>
 </template>
 
@@ -62,7 +63,8 @@ export default {
   },
   data() {
     return {
-      projects: projects
+      projects: projects,
+      detail: ">>>",
     }
   },
   props: [

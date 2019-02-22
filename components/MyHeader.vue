@@ -23,11 +23,7 @@
   </nav>
 </template>
 
-<style>
-@media (min-width:  768px) { .container { width: 750px; } }
-@media (min-width:  992px) { .container { width: 750px; } } 
-@media (min-width: 1200px) { .container { width: 750px; } }
-
+<style scoped>
 ul.nav a {
     font-size: 14px;
     margin: 10px;

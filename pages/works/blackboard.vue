@@ -9,7 +9,7 @@
         <h3><span class="glyphicon glyphicon-wrench"></span>使用ツール</h3>
         <p>Unity / C# / Blender / AfterEffects etc.</p>
         <h3><span class="glyphicon glyphicon-bookmark"></span>その他</h3>
-        <p>中国高専コンピュータフェスティバル2016 メディア部門1位</p>
+        <p><a href="http://ooshima-confes.webnode.jp/" target="_blank">中国高専コンピュータフェスティバル2016 メディア部門1位</a></p>
       </div>
     </div>
 
