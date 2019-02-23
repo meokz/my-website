@@ -25,7 +25,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
-      { rel: "stylesheet", href: "/css-js/honoka/css/bootstrap.min.css"}
+      { rel: "stylesheet", href: "/css-js/honoka/css/bootstrap.css"}
     ],
     script: [
       { src: "/css-js/jquery-3.2.1.min.js"},
