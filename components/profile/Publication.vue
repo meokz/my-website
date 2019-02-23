@@ -10,14 +10,14 @@
         </ol>
       </div>
       <div>
-        <h3 v-show="!isEnglish">国際会議 - オーラル発表</h3>
+        <h3 v-show="!isEnglish">国際会議論文 - オーラル発表</h3>
         <h3 v-show="isEnglish">International Conference - Oral Presentation</h3>
         <ol>
           <Project v-for="paper in papers" v-bind:key="paper.title" v-bind:project="paper"/>
         </ol>
       </div>
       <div>
-        <h3 v-show="!isEnglish">国際会議 - ポスター発表</h3>
+        <h3 v-show="!isEnglish">国際会議論文 - ポスター発表</h3>
         <h3 v-show="isEnglish">International Conference - Posters</h3>
         <ol>
           <Project v-for="poster in posters" v-bind:key="poster.title" v-bind:project="poster"/>

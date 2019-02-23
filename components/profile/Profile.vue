@@ -7,11 +7,17 @@
         <Carousel/>
       </div>
       <div class="col-xs-12 col-sm-8">
-        <h3>大峠 和基 - Kazuki Otao</h3>
-        <p v-show="!isEnglish">{{ profile.jp }}</p>
-        <p v-show="isEnglish">{{ profile.en }}</p>
-        <p v-show="!isEnglish" align="right"><a href="/profile/Resume2017.pdf" target="_blank">{{detail}} 履歴書 (English)</a></p>
-        <p v-show="isEnglish" align="right"><a href="/profile/Resume2017.pdf" target="_blank">{{detail}} Resume</a></p>
+        <div v-show="!isEnglish">
+          <h3>大峠 和基 - おおたお かずき</h3>
+          <p>{{ profile.jp }}</p>
+          <p align="right"><a href="/profile/Resume2017.pdf" target="_blank">{{detail}} Resume (英語)</a></p>
+        </div>
+        <div v-show="isEnglish">
+          <h3>大峠 和基 - Kazuki Otao</h3>
+          <p>{{ profile.en }}</p>
+          <p align="right"><a href="/profile/Resume2017.pdf" target="_blank">{{detail}} Resume</a></p>
+        </div>
+        
       </div>
     </div>
 
