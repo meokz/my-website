@@ -71,45 +71,66 @@ const webradio = [
 
 const web = [
   {
-    "id": 9,
+    "id": 12,
+    "title" : "【特集】ミスター筑波2018 大峠和基さんインタビュー",
+    "url" : "https://magazine.mast.tsukuba.ac.jp/archives/3828",
+    "media_name" : "MAST Web",
+    "date" : "2019.01.29"
+  },
+  {
+    "id": 11,
     "title" : "注目の網膜投影技術 落合陽一氏らが開発した実機を体験",
     "url" : "https://www.moguravr.com/dng-retinal-projector/",
     "media_name" : "Mogura VR",
     "date" : "2018.08.25"
   },
   {
-    "id": 8, 
+    "id": 10, 
     "title" : "【SIGGRAPH2018】先端技術コーナーを一挙レポ 日本からも多数出展",
     "url" : "https://www.moguravr.com/siggraph-2018-e-tech-report-ar-vr/",
     "media_name" : "Mogura VR",
     "date" : "2018.08.23"
   },
   {
-    "id": 7,
+    "id": 9,
     "title" : "筑波大学ら、網膜に画像を直接投影することで、現実空間と仮想オブジェクトの調和を実現する透過型ミラーデバイスを用いたレーザ投影システムを発表",
     "url" : "https://shiropen.com/seamless/make-your-own-retinal-projector",
     "media_name" : "Seamless",
     "date" : "2018.06.20"
   },
   {
-    "id": 6,
+    "id": 8,
+    "title" : "SIGGRAPH 2018 Emerging Technologiesでのシースルー型HMD試作機のデモンストレーション展示に関するお知らせ",
+    "url" : "http://pixiedusttech.com/010/",
+    "media_name" : "Pixie Dust Tecnologies, Inc.",
+    "date" : "2018.06.20"
+  },
+  {
+    "id": 7,
     "title" : "徳山高専ら、浮遊する映像を表現できる霧を用いたフォグディスプレイに触れることができるインタラクション技術を論文にて発表",
     "url" : "http://shiropen.com/2017/12/29/30755",
     "media_name" : "Seamless",
     "date" : "2017.12.29"
   },
   {
-    "id": 5,
+    "id": 6,
     "title" : "落合陽一氏ら、AR向け技術を続々発表 キーワードは広視野・透過型",
     "url" : "http://www.moguravr.com/pixiedusttech-ar/",
     "media_name" : "Mogura VR",
     "date" : "2017.11.24"
   },
   {
-    "id": 4,
+    "id": 5,
     "title" : "ピクシーダストテクノロジーズとデジタルネイチャーグループ、透過型ミラーデバイスを用いたAR向け広視野シースルーHMD実現方式を論文にて発表。ボケの再現などを可能に",
     "url" : "http://shiropen.com/2017/11/22/29800",
     "media_name" : "Seamless",
+    "date" : "2017.11.22"
+  },
+  {
+    "id": 4,
+    "title" : "AR向け広視野シースルーHMDを実現する新方式Light Field Blenderを開発",
+    "url" : "http://pixiedusttech.com/004/",
+    "media_name" : "Pixie Dust Technologies, Inc.",
     "date" : "2017.11.22"
   },
   {

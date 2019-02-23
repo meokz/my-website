@@ -15,7 +15,7 @@
 
     <Link />
 
-    <Publication />
+    <Publication v-bind:isEnglish="isEnglish"/>
 
     <Exhibition />
 
