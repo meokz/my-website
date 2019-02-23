@@ -1,6 +1,11 @@
 <template>
   <div>
-    <button v-on:click="toggle">Japansese / English</button>
+    <!-- <button v-on:click="toggle">Japansese / English</button> -->
+    <div class="row">
+      <div class = "lang-button">
+        <LanguageButton v-bind:flag="isEnglish" @on-toggle-change="onIsEnglishChange"/>
+      </div>
+    </div>
 
     <Profile v-bind:isEnglish="isEnglish"/>
 
@@ -10,7 +15,7 @@
 
     <Link />
 
-    <Publication />
+    <Publication v-bind:isEnglish="isEnglish"/>
 
     <Exhibition />
 
@@ -24,6 +29,11 @@
 </template>
 
 <style>
+
+.lang-button {
+  padding: 10px 5px 0px 0px;
+  float: right;
+}
 
 h2 {
     font-size: 18px;
@@ -50,6 +60,7 @@ ul { list-style:none; }
 </style>
 
 <script>
+import LanguageButton from '~/components/LanguageButton.vue'
 import Profile from '~/components/profile/Profile.vue'
 import Projects from '~/components/profile/Projects.vue'
 import Career from '~/components/profile/Career.vue'
@@ -64,11 +75,12 @@ export default {
   head () {
     return {
       titleTemplate: null,
-      title: 'Kazuki Otao / 大峠和基',
+      title: '大峠和基 / Kazuki Otao',
     }
   },
   layout: 'base',
   components: {
+    LanguageButton,
     Profile,
     Projects,
     Career,
@@ -85,8 +97,8 @@ export default {
     }
   },
   methods: {
-    toggle: function() {
-      this.isEnglish = !this.isEnglish
+    onIsEnglishChange (flag) {
+      this.isEnglish = flag
     }
   }
 }

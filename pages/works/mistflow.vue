@@ -5,12 +5,14 @@
     <div class="row">
       <div class="work_caption">
         <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
+        <p><a href="/works/mistflow/docs/mistflow.pdf" target="_blank">SIGGRAPH Asia 2017 Two-page Abstract [PDF 4.5MB]</a></p>
+        <p><a href="/works/mistflow/docs/mistflow-poster.pdf" target="_blank">SIGGRAPH Asia 2017 Poster [PDF 4.1MB]</a></p>
         <p><a href="/works/mistflow/docs/paper-Interaction17.pdf" target="_blank">Paper Preprint (Japanese) [PDF 2.8MB]</a></p>
         <p><a href="/works/mistflow/docs/presen-tct.pdf" target="_blank">Presentation (Japanese) [PDF 2.8MB]</a></p>
-        <p><a href="/works/mistflow/docs/mistflow.pdf" target="_blank">SIGGRAPH Asia 2017 Two-page Abstract [PDF 4.5MB]</a></p>
         <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
         <p>Unity, Leap Motion</p>
         <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
+        <p>Takanori Koga and Kazuki Otao. 2018. An Interactive Fog Display to Express Adaptive Shape-Changing Flow. In the 25th International Display Workshops (IDW '18).</p>
         <p><a href="https://www.cmcbooks.co.jp/products/detail.php?product_id=5450" target="_blank">山本裕紹 監修. 空中ディスプレイの開発と応用展開 (Recent Developments and Prospective Applications of Aerial Display). シーエムシー出版, 2018, 267p. (第Ⅲ編，第9章を分担執筆)</a></p>
         <p><a href="https://doi.org/10.1145/3145690.3145696" target="_blank"><u>Kazuki Otao</u> and Takanori Koga. 2017. Mistflow: a fog display for visualization of adaptive shape-changing flow. In <em>SIGGRAPH Asia 2017 Posters</em> (SA '17). ACM, New York, NY, USA, Article 17, 2 pages. DOI: https://doi.org/10.1145/3145690.3145696</a></p>
         <p><a href="http://www.interaction-ipsj.org/proceedings/2017/data/bib/3-504-21.html" target="_blank"><u>大峠和基</u>, 古賀崇了. “霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討”. 情報処理学会インタラクション2017. 2017, p.752-757.</a></p>
@@ -65,7 +67,7 @@ export default {
           "name": "mistflow",
           "title": title,
           "description_jp": "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを開発しました。2017年3月に情報処理学会インタラクション2017にてデモンストレーション発表を行いました。2017年11月にACM SIGGRAPH Asia 2017にてポスター発表を行いました。Virtual Reality系の研究を取り上げるSeamless様に記事を掲載して頂きました。宇都宮大学 山本先生監修の「空中ディスプレイの開発と応用展開」にて分担執筆させて頂きました。",
-          "description_en": "This research presents a fog display for visualization of adaptive shape-changing flow.",
+          "description_en": "Conventional fog displays realized interesting interaction focusing on touching motion to aerial images, there is no expression explicitly taking advantage of the relationship between the physical flow of the screen and a projected image associated with it. Mistform [Tokuda et al. 2017] proposed to predict the shape of the screen. However, it also does not detect the physically deformed shape of the screen by user's action explicitly. We propose a feed-forward approach to create pseudosynchronized image contents with the deformation by users. In the proposed method, a sense of natural synchronization between the shape-changing screen and the projected image is provided by using hand gesture detection and a physical simulation of collision between falling particles and user's hands.",
           "youtube": "https://www.youtube.com/embed/YwNEVw1YgCY"
       }
     }

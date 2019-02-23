@@ -11,6 +11,7 @@
         <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
         <p>Unity</p>
         <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
+        <p>[Bachelor Thesis] Optical Design for See-Through Near-Eye Display using Dihedral Corner Reflector Array（Adviser Yoichi Ochiai）</p>
         <p><a href="https://doi.org/10.1145/3145749.3149425" target="_blank"><u>Kazuki Otao</u>, Yuta Itoh, Hiroyuki Osone, Kazuki Takazawa, Shunnosuke Kataoka, and Yoichi Ochiai. 2017. Light field blender: designing optics and rendering methods for see-through and aerial near-eye display. In <em>SIGGRAPH Asia 2017 Technical Briefs</em> (SA '17). ACM, New York, NY, USA, Article 9, 4 pages. DOI: https://doi.org/10.1145/3145749.3149425</a></p>
         <h3><span class="glyphicon glyphicon-list"></span>Exhibition</h3>
         <p><a href="https://www.aec.at/ai/de/recomposition-of-human-presence/" target="_blank">Digital Nature Group at the University of Tsukuba, Pixie Dust Technologies Inc. 2017. <u>Recomposition of Human Presence: Waves, Material, and Intelligence.</u> Ars Electronica Festival, Linz, Austria, 2017.09.07-11</a></p>
@@ -55,8 +56,8 @@ export default {
       project: {
         "name": "lightfieldblender",
         "title": title,
-        "description_jp": "This research presents a near-eye light field display for augmented reality using Transmissive Mirror Device instead of conventional optical elements such as half-mirror, free-from optics, and waveguide.",
-        "description_en": "Ars Electronica 2017で実機のデモ展示を行いました。SIGGRAPH Asia 2017で登壇発表を行いました。",
+        "description_jp": "透過型のLight Fieldディスプレイ。DCRAを用いることで、視野角を損ねずに透過性を保つことに成功しました。Ars Electronica 2017で実機のデモ展示を行いました。SIGGRAPH Asia 2017で口頭発表を行いました。",
+        "description_en": "We propose a novel head-mounted display (HMD) design for near-eye light field display which achieves a see-through and wide field of view for augmented reality. We use a transmissive mirror device (TMD) instead of conventional optical elements. A TMD consists of numerous micro-mirrors and is usually used for real imaging system in the mid-air. We construct a prototype see-through display including a fabricated HMD. We verify the design of our prototype using simulations and experiments, and further discuss the challenges in building a novel near-eye, see-through display.",
         "youtube": "https://www.youtube.com/embed/isgaDS-qXsI"}
     }
   }

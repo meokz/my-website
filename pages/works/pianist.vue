@@ -20,11 +20,7 @@
 
 
     <div class="row">
-      <div style="padding-top: 0px">
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/qRJWUxsAh3M?start=1135" frameborder="1135" allowfullscreen></iframe>
-        </div>
-      </div>
+      <Video v-bind:url="url" v-bind:frameborder="0"/>
     </div>
 
     <div class="row">
@@ -64,12 +60,14 @@
 <script>
 import Meta from '~/assets/Meta.js'
 import WorkPage from '~/components/works/WorkPage.vue'
+import Video from '~/components/Video.vue'
 
 export default {
   mixins: [Meta],
   layout: 'project',
   components: {
-    WorkPage
+    WorkPage,
+    Video
   },
   data() {
     return {
@@ -86,7 +84,8 @@ export default {
         "description_jp": "OculusRiftにPSEyeを2つ取り付けステレオカメラ化した上で、現実の映像にARで運指アニメーションや運指番号付き楽譜を表示します.さらに、LeapMotionを用いてユーザの運指を取得し、間違った運指を指摘したり、運指をクラウド経由で共有化して練習を促進してくれるというものです.また、MIDIファイルから運指を生成する機能もあるので、運指番号が振られていない曲でも楽曲データさえあれば運指付きの楽譜を生成してくれます. 責任者兼プロジェクトマネジメントを担当.開発ではRiftのステレオカメラ化を担当. 本選ではプレゼンテーションを担当しました.",
         "description_en": "No english description.",
         "youtube": "https://www.youtube.com/embed/7xNNoWNeetY"
-      }
+      },
+      url: "https://www.youtube.com/embed/qRJWUxsAh3M?start=1135"
     }
   }
 }

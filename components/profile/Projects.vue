@@ -1,10 +1,12 @@
 <template>
   <div class="project">
-    <h2>Project</h2>
+    <h2 v-show="!isEnglish">Project</h2>
+    <h2 v-show="isEnglish">Project (Selected) </h2>
     <div>
       <ProjectDetail v-for="work in projects" v-bind:key="work.name" v-bind:work="work" v-bind:isEnglish="isEnglish"/>
     </div>
-    <p align="right"><a href="/works">{{detail}} All Project</a></p>
+    <p  v-show="!isEnglish" align="right"><a href="/works">{{detail}} 全てのプロジェクト一覧</a></p>
+    <p  v-show="isEnglish" align="right"><a href="/works">{{detail}} All Project</a></p>
   </div>
 </template>
 
@@ -14,43 +16,48 @@ import ProjectDetail from '~/components/profile/ProjectDetail.vue'
 const projects = [
   {
     name: "mistflow",
-    title: "MistFlow",
-    jp: "手の姿勢検出を元に変化する霧の形状を推定し，投影される映像と実際の霧スクリーンの流れが自然に一致することを目指したフォグディスプレイを研究開発しました。",
-    en: "This research presents a fog display for visualization of adaptive shape-changing flow.",
+    title_jp: "MistFlow",
+    title_en: "MistFlow: A Fog Display for Visualization of Adaptive Shape-Changing Flow",
+    description_jp: "空中浮遊ディスプレイを開発しました。手の姿勢検出を元に変化する霧の形状をコンピュータシミュレーションにより推定し，実際の霧スクリーンの流れが自然に一致するような投影映像をレンダリングします。",
+    description_en: "We propose an interactive fog display to express the adaptive shape-changing flow of a fog screen caused by interactions with the viewer. We present the design specifications of the proposed system, evaluation results of a user study, and some application contents to use the proposed system effectively.",
     tag: [
       "IDW 2018", "SIGGRAPH Asia 2017", "情報処理学会インタラクション2017"
     ]
   }, 
   {
     name: "mealie",
-    title: "Mealie：学食食券オンライン予約システム",
-    jp: "Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。遠い食堂まで行く手間を省き，自分の食べたいメニューを確実に予約します。",
-    en: "No english description.",
+    title_jp: "Mealie：学食食券オンライン予約システム",
+    title_en: "Mealie: Online Reservation System for Campus Cafeteria",
+    description_jp: "Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。遠い食堂まで行く手間を省き，自分の食べたいメニューを確実に予約します。",
+    description_en: "We developed an online reservation system for our college cafeteria. Server-side is written by Ruby on Rails and source code is available in Github.",
     tag: [
       "U-22プロコン 経済産業省商務情報政策局長賞"
     ]
   },
   {
     name: "reink",
-    title: "Re:ink：干渉可能なプロジェクションマッピング",
-    jp: "Re:inkは真っ白になった工場を学園祭の来場者の手によって蘇らせるインスタレーションです。Unityを用いて映像を生成・同期することで，再生するたびに異なるストーリーが展開します。",
-    en: "No english description.",
+    title_jp: "Re:ink：干渉可能なプロジェクションマッピング",
+    title_en: "\"Re:ink\": Digital Interactive Painting for Architectural Model with Projection Mapping System",
+    description_jp: "Re:inkは真っ白になった工場を学園祭の来場者の手によって蘇らせるインスタレーションです。Unityを用いて映像を生成・同期することで，再生するたびに異なるストーリーが展開します。",
+    description_en: "We digitally painted the texture on a white architectural model with multiple projectors. Video sources are rendered in real time on Unity, allowing viewers to interact with drawn texture.",
     tag: []
   },
   {
     name: "smartmakura",
-    title: "Smart枕",
-    jp: "Smart枕はAndroid端末と枕型デバイスが連携する新しいライフハックプロダクトです。枕型デバイスに組み込まれた圧力センサとバイブレーションを用いてユーザを確実に起こすとともに，睡眠情報を記録し，最適な睡眠時間を教えてくれます。",
-    en: "No english description.",
+    title_jp: "Smart枕",
+    title_en: "Smart Makura: Pillow Type Device for Sensing and Intervening User's Sleep",
+    description_jp: "Smart枕はAndroid端末と枕型デバイスが連携する新しいライフハックプロダクトです。枕型デバイスに組み込まれた圧力センサとバイブレーションを用いてユーザを確実に起こすとともに，睡眠情報を記録し，最適な睡眠時間を教えてくれます。",
+    description_en: "We developed a pillow device consisting of sensors and vibrators. The pillow is connected with the Android application to records sleep and wakes up users.",
     tag: [
       "パソコン甲子園2014"
     ]
   }, 
   {
     name: "spacewars",
-    title: "SpaceWars",
-    jp: "自ユニットを弾き飛ばして敵ユニットに攻撃します。ユニットはHPが0になるか，ステージから落とされると消滅します。いろいろな戦略を楽しむだけでなく，グラフィクスエフェクトと物理演算による爽快なプレイを楽しむことができます。",
-    en: "No english description.",
+    title_jp: "SpaceWars",
+    title_en: "SpaceWars",
+    description_jp: "自ユニットを弾き飛ばして敵ユニットに攻撃します。ユニットはHPが0になるか，ステージから落とされると消滅します。いろいろな戦略を楽しむだけでなく，グラフィクスエフェクトと物理演算による爽快なプレイを楽しむことができます。",
+    description_en: "We implemented a computer game using Unity. We designed a character and created a graphical effect.",
     tag: [
       "コンフェス2015 ソフトウェア部門1位"
     ]

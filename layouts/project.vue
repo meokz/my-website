@@ -4,7 +4,7 @@
 
     <section class="container">
       <!-- 各ページのテンプレート挿入 -->
-      <nuxt/>
+      <nuxt />
     </section>
   </div>
 </template>
@@ -16,23 +16,9 @@ a:visited { color: #000000; }
 a:hover   { color: #ff0000; }
 a:active  { color: #ff8000; }
 
-.video {
-    position: relative;
-    height: 0;
-    padding: 30px 0 56.25%;
-    overflow: hidden;
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .work_caption {
-    margin-bottom: 50px;
+  padding: 0px 5%;
+  margin-bottom: 20px;
 }
 
 .work_caption h3 {
@@ -62,7 +48,6 @@ a:active  { color: #ff8000; }
 
 .container {
     background: #FFFFFF;
-    padding: 0px 50px 50px 50px;
 }
 
 </style>

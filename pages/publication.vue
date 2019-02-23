@@ -1,32 +1,57 @@
 <template>
   <div>
+    <div class="row">
+      <div class = "lang-button">
+        <LanguageButton v-bind:flag="isEnglish" @on-toggle-change="onIsEnglishChange"/>
+      </div>
+    </div>
+
     <h2>Publication</h2>
     <div>
-      <h3>Book - 書籍</h3>
+      <h3 v-show="!isEnglish">書籍</h3>
+      <h3 v-show="isEnglish">Book</h3>
       <ol>
-        <ListItem v-for="item in books" v-bind:key="item.id" v-bind:item="item" />
+        <ListItem v-show="!isEnglish" v-for="item in books_jp" v-bind:key="item.id" v-bind:item="item" />
+        <ListItem v-show="isEnglish" v-for="item in books_en" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>Thesis - 卒業論文</h3>
+      <h3 v-show="!isEnglish">卒業論文</h3>
+      <h3 v-show="isEnglish">Thesis</h3>
       <ol>
-        <ListItem v-for="item in thesis" v-bind:key="item.id" v-bind:item="item" />
+        <div v-show="!isEnglish">
+          <ListItem v-bind:item="thesis_jp[0]" />
+          <p>平成30年度 筑波大学情報学群情報メディア創成学類 卒業論文（指導教官・落合陽一）</p>
+          <ListItem v-bind:item="thesis_jp[1]" />
+          <p>平成28年度 徳山高専情報電子工学科 卒業論文（指導教官・古賀崇了）</p>
+        </div>
+        <div v-show="isEnglish">
+          <ListItem v-bind:item="thesis_en[0]" />
+          <p>Bachelor thesis in University of Tsukuba.（Advisor, Yoichi Ochiai）</p>
+          <ListItem v-bind:item="thesis_en[1]" />
+          <p>Foundation thesis in National Institute of Technology, Tokuyama College.（Advisor, Takanori Koga）</p>
+        </div>
       </ol>
-      <h3>International Conference Papers - 査読あり国際会議論文</h3>
+      <h3 v-show="!isEnglish">査読あり国際会議論文 - オーラル発表</h3>
+      <h3 v-show="isEnglish">International Conference with Peer Review - Oral Presentation</h3>
       <ol>
         <ListItem v-for="item in international_papers" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>International Conference Posters - 査読あり国際会議ポスター発表</h3>
+      <h3 v-show="!isEnglish">査読あり国際会議論文 - ポスター発表</h3>
+      <h3 v-show="isEnglish">International Conference with Peer Review - Posters</h3>
       <ol>
         <ListItem v-for="item in posters" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>International Conference Demos - 査読あり国際会議デモ発表</h3>
+      <h3 v-show="!isEnglish">査読あり国際会議論文 - デモ発表</h3>
+      <h3 v-show="isEnglish">International Conference with Peer Review - Demos</h3>
       <ol>
         <ListItem v-for="item in demos" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>International Conference Invited Talk - 国際会議招待講演</h3>
+      <h3 v-show="!isEnglish">国際会議論文 - 招待講演</h3>
+      <h3 v-show="isEnglish">International Conference - Invited Talk</h3>
       <ol>
         <ListItem v-for="item in invited_talk" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>Domestic Conference - 国内会議</h3>
+      <h3 v-show="!isEnglish">国内会議</h3>
+      <h3 v-show="isEnglish">Domestic Conference (Japanese) </h3>
       <ol>
         <ListItem v-for="item in domestic" v-bind:key="item.id" v-bind:item="item" />
       </ol>
@@ -39,6 +64,10 @@
 </template>
 
 <style>
+.lang-button {
+  padding: 10px 5px 0px 0px;
+  float: right;
+}
 
 h2 {
     font-size: 18px;
@@ -63,28 +92,51 @@ ul { list-style:none; }
 
 <script>
 import Meta from '~/assets/Meta.js'
+import LanguageButton from '~/components/LanguageButton.vue'
 import ListItem from '~/components/publication/ListItem.vue'
 
-const books = [
+const books_jp = [
   {
     "id": 1,
-    "title" : "山本裕紹 監修. 空中ディスプレイの開発と応用展開 (Recent Developments and Prospective Applications of Aerial Display). シーエムシー出版, 2018, 267p. (第Ⅲ編，第9章を分担執筆)",
+    "title" : "山本裕紹 監修. 空中ディスプレイの開発と応用展開. シーエムシー出版, 2018, 267p. (第Ⅲ編，第9章を分担執筆)",
     "url" : "https://www.cmcbooks.co.jp/products/detail.php?product_id=5450",
     "target" : "_blank"
 	}
 ]
 
-const thesis = [
+const books_en = [
+  {
+    "id": 1,
+    "title" : "Recent Developments and Prospective Applications of Aerial Display. CMC Publishing Co.,Ltd., 2018, 267p. (Written contribution of Part III, Chapter 9 )",
+    "url" : "https://www.cmcbooks.co.jp/products/detail.php?product_id=5450",
+    "target" : "_blank"
+	}
+]
+
+const thesis_jp = [
   {
     "id": 2,
-    "title" : "Optical Design for See-Through Near-Eye Display using Dihedral Corner Reflector Array（Adviser Yoichi Ochiai）平成30年度 筑波大学情報メディア創成学類 卒業論文",
+    "title" : "Optical Design for See-Through Near-Eye Display using Dihedral Corner Reflector Array",
     "url" : "../works/airmountedeyepiece"
   },
   {
     "id": 1,
-    "title" : "霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討（指導教官・古賀崇了准教授）平成28年度 徳山高専情報電子工学科 卒業論文",
+    "title" : "霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討",
     "url" : "../works/mistflow"
   }
+]
+
+const thesis_en = [
+  {
+    "id": 2,
+    "title" : "Optical Design for See-Through Near-Eye Display using Dihedral Corner Reflector Array",
+    "url" : "../works/airmountedeyepiece"
+  },
+  {
+    "id": 1,
+    "title" : "Fundamental Study on Interactive Fog Display Realizing Adaptive Image Projection to Deforming Fog Screen",
+    "url" : "../works/mistflow"
+  },
 ]
 
 const international_papers = [
@@ -152,10 +204,12 @@ export default {
   mixins: [Meta],
   layout: 'base',
   components: {
+    LanguageButton,
     ListItem
   },
   data() {
     return {
+      isEnglish: false,
       meta: {
         title: 'Publication',
         description: 'Publication | Kazuki Otao / 大峠和基',
@@ -163,14 +217,21 @@ export default {
         url: 'https://meo-cs.net/publication',
         image: 'https://meo-cs.net/publication/img/mistflow.jpg',
       },
-      books: books,
-      thesis: thesis,
+      books_jp: books_jp,
+      books_en: books_en,
+      thesis_jp: thesis_jp,
+      thesis_en: thesis_en,
       international_papers: international_papers,
       posters: posters,
       demos: demos,
       invited_talk: invited_talk,
       domestic: domestic,
       e_print: e_print
+    }
+  },
+  methods: {
+    onIsEnglishChange (flag) {
+      this.isEnglish = flag
     }
   }
 }

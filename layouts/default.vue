@@ -5,7 +5,5 @@
 </template>
 
 <style>
-@media (min-width:  768px) { .container { width: 750px; } }
-@media (min-width:  992px) { .container { width: 750px; } } 
-@media (min-width: 1200px) { .container { width: 750px; } }
+
 </style>

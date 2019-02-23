@@ -2,15 +2,17 @@
   <div class="work">
     <a v-bind:href="getURL">
       <div class="row">
+    
         <div class="col-xs-4 col-sm-4">
           <div class="thumbnail">
             <img class="img-responsive" v-bind:src="getImageURL"/>
           </div>
         </div>
         <div class="col-xs-8 col-sm-8">
-          <h3>{{ work.title }}</h3>
-          <p v-show="!isEnglish">{{ work.jp }}</p>
-          <p v-show="isEnglish">{{ work.en }}</p>
+          <h3 v-show="!isEnglish">{{ work.title_jp }}</h3>
+          <h3 v-show="isEnglish">{{ work.title_en }}</h3>
+          <p v-show="!isEnglish">{{ work.description_jp }}</p>
+          <p v-show="isEnglish">{{ work.description_en }}</p>
           <Tag :tags="work.tag"/>
         </div>
       </div>
