@@ -132,8 +132,8 @@ export default {
   ],
   methods: {
     toggle: function() {
-      this.flag = !this.flag
-      this.$emit('on-toggle-change', this.flag)
+      // this.flag = !this.flag
+      this.$emit('on-toggle-change', !this.flag)
     }
   }
 }

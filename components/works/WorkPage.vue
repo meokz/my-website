@@ -1,5 +1,12 @@
 <template>
-  <div>
+  <div class="inner">
+
+    <div class="row">
+      <div class = "lang-button">
+        <LanguageButton v-bind:flag="isEnglish" @on-toggle-change="onIsEnglishChange"/>
+      </div>
+    </div>
+
     <h2>{{ project.title }}</h2>
 
     <div class="row">
@@ -7,16 +14,19 @@
         <Video v-bind:url="project.youtube" v-bind:frameborder="0"/>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="work_caption">
-          <p>{{ project.description_en }}</p>
-          <p>{{ project.description_jp }}</p>
-        </div>
+        <p v-show="!isEnglish">{{ project.description_jp }}</p>
+        <p v-show="isEnglish">{{ project.description_en }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+  
+.inner {
+    padding: 0px 50px 50px 50px;
+}
+
 h2 {
     font-size: 24px;
     font-weight: normal;
@@ -30,14 +40,26 @@ h2 {
 </style>
 
 <script>
+import LanguageButton from '~/components/LanguageButton.vue'
 import Video from '~/components/Video.vue'
 
 export default {
   components: {
-    Video
+    Video,
+    LanguageButton
+  },
+  data() {
+    return {
+      isEnglish: false
+    }
   },
   props: [
-    'project'
-  ]
+    'project',
+  ],
+  methods: {
+    onIsEnglishChange (flag) {
+      this.isEnglish = flag
+    }
+  }
 }
 </script>

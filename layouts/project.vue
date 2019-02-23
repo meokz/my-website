@@ -3,16 +3,8 @@
     <MyHeader/>
 
     <section class="container">
-      <div class="row">
-        <div class = "lang-button">
-          <LanguageButton v-bind:flag="isEnglish" @on-toggle-change="onIsEnglishChange"/>
-        </div>
-      </div>
-
       <!-- 各ページのテンプレート挿入 -->
-      <div class="inner">
-        <nuxt />
-      </div>
+      <nuxt />
     </section>
   </div>
 </template>
@@ -30,7 +22,8 @@ a:active  { color: #ff8000; }
 }
 
 .work_caption {
-    margin-bottom: 50px;
+  padding: 0px 50px;
+  margin-bottom: 20px;
 }
 
 .work_caption h3 {
@@ -62,30 +55,14 @@ a:active  { color: #ff8000; }
     background: #FFFFFF;
 }
 
-.inner {
-    padding: 0px 50px 50px 50px;
-}
-
 </style>
 
 <script>
 import MyHeader from '~/components/MyHeader.vue'
-import LanguageButton from '~/components/LanguageButton.vue'
 
 export default {
   components: {
     MyHeader,
-    LanguageButton
   },
-  data() {
-    return {
-      isEnglish: false
-    }
-  },
-  methods: {
-    onIsEnglishChange (flag) {
-      this.isEnglish = flag
-    }
-  }
 }
 </script>
