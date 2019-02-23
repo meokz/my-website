@@ -3,8 +3,16 @@
     <MyHeader/>
 
     <section class="container">
+      <div class="row">
+        <div class = "lang-button">
+          <LanguageButton v-bind:flag="isEnglish" @on-toggle-change="onIsEnglishChange"/>
+        </div>
+      </div>
+
       <!-- 各ページのテンプレート挿入 -->
-      <nuxt/>
+      <div class="inner">
+        <nuxt />
+      </div>
     </section>
   </div>
 </template>
@@ -16,19 +24,9 @@ a:visited { color: #000000; }
 a:hover   { color: #ff0000; }
 a:active  { color: #ff8000; }
 
-.video {
-    position: relative;
-    height: 0;
-    padding: 30px 0 56.25%;
-    overflow: hidden;
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.lang-button {
+  padding: 10px 5px 0px 0px;
+  float: right;
 }
 
 .work_caption {
@@ -62,6 +60,9 @@ a:active  { color: #ff8000; }
 
 .container {
     background: #FFFFFF;
+}
+
+.inner {
     padding: 0px 50px 50px 50px;
 }
 
@@ -69,10 +70,22 @@ a:active  { color: #ff8000; }
 
 <script>
 import MyHeader from '~/components/MyHeader.vue'
+import LanguageButton from '~/components/LanguageButton.vue'
 
 export default {
   components: {
     MyHeader,
+    LanguageButton
   },
+  data() {
+    return {
+      isEnglish: false
+    }
+  },
+  methods: {
+    onIsEnglishChange (flag) {
+      this.isEnglish = flag
+    }
+  }
 }
 </script>
