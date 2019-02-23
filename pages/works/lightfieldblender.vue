@@ -55,8 +55,8 @@ export default {
       project: {
         "name": "lightfieldblender",
         "title": title,
-        "description_jp": "This research presents a near-eye light field display for augmented reality using Transmissive Mirror Device instead of conventional optical elements such as half-mirror, free-from optics, and waveguide.",
-        "description_en": "Ars Electronica 2017で実機のデモ展示を行いました。SIGGRAPH Asia 2017で登壇発表を行いました。",
+        "description_jp": "Ars Electronica 2017で実機のデモ展示を行いました。SIGGRAPH Asia 2017で登壇発表を行いました。",
+        "description_en": "We propose a novel head-mounted display (HMD) design for near-eye light field display which achieves a see-through and wide field of view for augmented reality. We use a transmissive mirror device (TMD) instead of conventional optical elements. A TMD consists of numerous micro-mirrors and is usually used for real imaging system in the mid-air. We construct a prototype see-through display including a fabricated HMD. We verify the design of our prototype using simulations and experiments, and further discuss the challenges in building a novel near-eye, see-through display.",
         "youtube": "https://www.youtube.com/embed/isgaDS-qXsI"}
     }
   }

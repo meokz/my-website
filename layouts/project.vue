@@ -16,13 +16,8 @@ a:visited { color: #000000; }
 a:hover   { color: #ff0000; }
 a:active  { color: #ff8000; }
 
-.lang-button {
-  padding: 10px 5px 0px 0px;
-  float: right;
-}
-
 .work_caption {
-  padding: 0px 50px;
+  padding: 0px 5%;
   margin-bottom: 20px;
 }
 
