@@ -12,6 +12,7 @@
         <p><a href="/works/airmountedeyepiece/docs/2017-arxiv-ame.pdf" target="_blank">Arxiv e-Print [PDF 1.2MB]</a></p>
 
         <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>
+        <p>[Bachelor Thesis] Optical Design for See-Through Near-Eye Display using Dihedral Corner Reflector Array（Adviser Yoichi Ochiai）</p>
         <p><a href="https://doi.org/10.1145/3214907.3214908" target="_blank"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Transmissive Mirror Device based Near-Eye Displays with Wide Field of View. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214908</a></p>
         <p><a href="https://doi.org/10.1145/3174910.3174911" target="_blank"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Air Mounted Eyepiece: Optical See-Through HMD Design with Aerial Optical Functions. In <em>Proceedings of the 9th Augmented Human International Conference</em> (AH ’18). ACM, New York, NY, USA, Article 1, 7 pages. DOI: https://doi.org/10.1145/3174910.3174911</a></p>
         <p><a href="https://arxiv.org/abs/1710.03889" target="_blank">Yoichi Ochiai, <u>Kazuki Otao</u>, Hiroyuki Osone. 2017. Air Mounted Eyepiece: Design Methods for Aerial Optical Functions of Near-Eye and See-Through Display using Transmissive Mirror Device. In <em>ArXiv e-prints</em>. https://arxiv.org/abs/1710.03889</a></p>
@@ -25,12 +26,9 @@
     </div>
 
     <div class="row">
-      <div style="padding-top: 0px">
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/Yresz2ERxhs" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div> 
+      <Video v-bind:url="url" v-bind:frameborder="0"/>
     </div>
+
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <iframe src="//www.slideshare.net/slideshow/embed_code/key/iYlE6jJTog476t" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kaootao/air-mounted-eyepiece-augmented-human-2018-96238839" title="Air Mounted Eyepiece (Augmented Human 2018)" target="_blank">Air Mounted Eyepiece (Augmented Human 2018)</a> </strong> from <strong><a href="https://www.slideshare.net/kaootao" target="_blank">Kazuki Otao</a></strong> </div>
@@ -45,6 +43,7 @@
 <script>
 import Meta from '~/assets/Meta.js'
 import WorkPage from '~/components/works/WorkPage.vue'
+import Video from '~/components/Video.vue'
 
 const title = "Air Mounted Eyepiece"
 
@@ -52,7 +51,8 @@ export default {
   mixins: [Meta],
   layout: 'project',
   components: {
-    WorkPage
+    WorkPage,
+    Video
   },
   data() {
     return {
@@ -66,10 +66,11 @@ export default {
       project: {
         "name": "airmountedeyepiece",
         "title": title,
-        "description_jp": "Augmented Human 2018にて登壇発表を行いました。SIGGRAPH 2018にてデモンストレーション展示を行いました。Seamless様，PANORA VR様，Mogura VR様に記事を掲載して頂きました。",
+        "description_jp": "DCRAと単レンズを用いた広視野角ARグラス。Augmented Human 2018にて登壇発表を行いました。SIGGRAPH 2018にてデモンストレーション展示を行いました。Seamless様，PANORA VR様，Mogura VR様に記事を掲載して頂きました。",
         "description_en": "This research presents a Transmissive Mirror Device based Head-Mounted Display. We employ TMD instead of conventional optical elements such as half-mirror, free-from optics, and waveguide. It realizes wide viewing angle because it enabled shorten optical path length between the eyeball and the virtual lens.",
         "youtube": "https://www.youtube.com/embed/fvUzAeQL9uA"
-      }
+      },
+      url: "https://www.youtube.com/embed/Yresz2ERxhs"
     }
   }
 }

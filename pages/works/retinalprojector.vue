@@ -60,8 +60,8 @@ export default {
       project: {
         "name": "retinalprojector",
         "title": title,
-        "description_jp": "SIGGRAPH 2018でデモンストレーション展示を行いました。Seamless様に記事を掲載して頂きました。",
-        "description_en": "Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials.",
+        "description_jp": "面対称結像光学系を使用した網膜投影。SIGGRAPH 2018でポスター発表及びデモンストレーション展示を行いました。Seamless様、Mogura VR様に記事を掲載して頂きました。",
+        "description_en": "Retinal projection is required for xR applications that can deliver immersive visual experience throughout the day. However, as the lenses and iris of an eyeball are in front of the retina, which is a limitation of a human eyeball, the proposal of retinal projection is generally fraught with narrow viewing angles and small eyebox problems. Due to these problems, retinal projection displays are still a rare commodity because of their difficulty in optical schematics design. To solve this problem, we introduce novel methods and samples of an optical system for solving the common problems of retinal projection by using the metamaterial mirror (plane symmetric transfer optical system). Using this projection method, the designing of retinal projection becomes easy, and if appropriate optics are available, it would be possible to construct an optical system that allows quick follow-up of retinal projection hardware.",
         "youtube": "https://www.youtube.com/embed/4_jgxx-mV_o"
       }
     }
