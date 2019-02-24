@@ -71,7 +71,7 @@ export default {
   ],
   computed: {
     getImageURL: function() {
-      return require("~/assets/works/" + this.project.url + "/thumbnail.jpg")
+      return "/works/" + this.project.url + "/thumbnail.jpg"
     }
   }
 }

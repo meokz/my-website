@@ -59,7 +59,7 @@ export default {
   ],
   computed: {
     getURL: function() {
-      return "./works/" + this.work.name
+      return "/works/" + this.work.name
     },
     getImageURL: function() {
       return require("~/assets/profile/img/" + this.work.name + ".jpg")

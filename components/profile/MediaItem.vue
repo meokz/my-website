@@ -14,7 +14,7 @@ export default {
       return this.item.title + ", " + this.item.url + ", " + this.item.media_name + ", " + this.item.date
     },
     getURL: function() {
-      return "./works/" + this.item.url
+      return "/works/" + this.item.url
     }
   }
 }
