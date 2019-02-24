@@ -30,7 +30,7 @@ export default {
   ],
   computed: {
     getImageURL: function() {
-      return require("~/assets/profile/works/" + this.project.image_url)
+      return "/profile/works/" + this.project.image_url
     }
   }
 }

@@ -13,22 +13,22 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="~/assets/profile/portrait/img01.jpg">
+        <img src="/profile/portrait/img01.jpg">
       </div>
       <div class="item">
-        <img src="~/assets/profile/portrait/img02.jpg">
+        <img src="/profile/portrait/img02.jpg">
       </div>
       <div class="item">
-        <img src="~/assets/profile/portrait/img03.jpg">
+        <img src="/profile/portrait/img03.jpg">
       </div>
       <div class="item">
-        <img src="~/assets/profile/portrait/img04.jpg">
+        <img src="/profile/portrait/img04.jpg">
       </div>
       <div class="item">
-        <img src="~/assets/profile/portrait/img05.jpg">
+        <img src="/profile/portrait/img05.jpg">
       </div>
       <div class="item">
-        <img src="~/assets/profile/portrait/img06.jpg">
+        <img src="/profile/portrait/img06.jpg">
       </div>
     </div>
 
