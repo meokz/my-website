@@ -52,14 +52,6 @@ export default {
         "youtube": "https://www.youtube.com/embed/sLHKTFW9i90"
       }
     }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/Image.jpg")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/sigasi.JPG")
-    }
   }
 }
 </script>

@@ -134,7 +134,7 @@
 
 <style>
 header.jumbotron {
-  background: url("../../assets/works/img/jumbotron5.jpg");
+  background: url("/works/img/jumbotron5.jpg");
   background-position: center 60%;
   background-size: cover;
   margin-bottom: 10px;
