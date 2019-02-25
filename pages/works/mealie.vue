@@ -63,14 +63,6 @@ export default {
         "youtube": "https://www.youtube.com/embed/MiFkeutR3ZU"
       }
     }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img1.png")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img2.png")
-    }
   }
 }
 </script>

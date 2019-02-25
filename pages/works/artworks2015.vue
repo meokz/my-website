@@ -54,14 +54,6 @@ export default {
         "title": title,
       }
     }
-  },
-  computed: {
-    getImageURL: function() {
-      return require("~/assets/works/" + this.project.name + "/img/yousay_ver2.jpg")
-    },
-    getImageURL2: function() {
-      return require("~/assets/works/" + this.project.name + "/img/building.jpg")
-    }
   }
 }
 </script>

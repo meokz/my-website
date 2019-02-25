@@ -92,20 +92,6 @@ export default {
         "youtube": "https://www.youtube.com/embed/tylQ3OqYGl4"
       }
     }
-  },
-  computed: {
-    getImageURL4: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img3.jpg")
-    },
-    getImageURL5: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img_uma.jpg")
-    },
-    getImageURL6: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img_hashi.jpg")
-    },
-    getImageURL7: function() {
-      return require("~/assets/works/" + this.project.name + "/img/img_projection.jpg")
-    }
   }
 }
 </script>
