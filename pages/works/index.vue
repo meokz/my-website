@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <MyHeader/>
-    
+
     <header class="jumbotron">
     　<div class="container">
     　</div>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      
+
 
       <div>
         <h2>Entertainment</h2>
@@ -421,8 +421,8 @@ export default {
         title: "Project",
         description: 'Kazuki OTAO Portforlio.',
         type: 'article',
-        url: 'https://meo-cs.net/works/img/jumbotron5.jpg',
-        image: 'https://meo-cs.net/works/img/jumbotron5.jpg',
+        url: 'https://kazukiotao.com/works/img/jumbotron5.jpg',
+        image: 'https://kazukiotao.com/works/img/jumbotron5.jpg',
       },
       research: research,
       product: product,

@@ -40,7 +40,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -62,8 +62,8 @@ export default {
         title: title,
         description: '高専祭メイン部署は、機会電気工学科, 情報電子工学科, 土木建築工学科の3つの学科がそれぞれの技術を生かし、1つの作品を創り上げる企画を行っています.今年は「大蛇の乱」を企画.',
         type: 'article',
-        url: 'https://meo-cs.net/works/taijyanoran/',
-        image: 'https://meo-cs.net/works/taijyanoran/img/img1.jpg',
+        url: 'https://kazukiotao.com/works/taijyanoran/',
+        image: 'https://kazukiotao.com/works/taijyanoran/img/img1.jpg',
       },
       project: {
         "name": "taijyanoran",

@@ -19,7 +19,7 @@
         <p><a href="https://cgworld.jp/interview/201712-sigasia2017-dgst.html" target="_blank">「SIGGRAPH ASIA 2017 BANGKOK」開催。その見どころを「2018 TOKYO」カンファレンスチェアの安生健一氏が解説, https://cgworld.jp/interview/201712-sigasia2017-dgst.html, CGWORLD.jp, 2017-12-7</a></p>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -41,8 +41,8 @@ export default {
         title: title,
         description: '半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。',
         type: 'article',
-        url: 'https://meo-cs.net/works/glassbeads/',
-        image: 'https://meo-cs.net/works/glassbeads/img/Image.jpg',
+        url: 'https://kazukiotao.com/works/glassbeads/',
+        image: 'https://kazukiotao.com/works/glassbeads/img/Image.jpg',
       },
       project: {
         "name": "glassbeads",

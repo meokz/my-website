@@ -26,7 +26,7 @@
     <div class="row">
       <iframe src="//www.slideshare.net/slideshow/embed_code/key/3128XfBWb0cFzF" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kaootao/pianist-2015-84691381" title="Pianist: 鍵盤楽器運指練習システム 予選資料 (高専プロコン2015)" target="_blank">Pianist: 鍵盤楽器運指練習システム 予選資料 (高専プロコン2015)</a> </strong> from <strong><a href="https://www.slideshare.net/kaootao" target="_blank">Kazuki Otao</a></strong> </div>
     </div>
-    
+
     <div class="row">
       <iframe src="//www.slideshare.net/slideshow/embed_code/key/X21DdcDA49sZB" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kaootao/pianist-2015-84691500" title="Pianist: 鍵盤楽器運指練習システム 本選資料 (高専プロコン2015)" target="_blank">Pianist: 鍵盤楽器運指練習システム 本選資料 (高専プロコン2015)</a> </strong> from <strong><a href="https://www.slideshare.net/kaootao" target="_blank">Kazuki Otao</a></strong> </div>
     </div>
@@ -75,8 +75,8 @@ export default {
         title: "Pianist",
         description: "OculusRiftにPSEyeを2つ取り付けステレオカメラ化した上で、現実の映像にARで運指アニメーションや運指番号付き楽譜を表示します.さらに、LeapMotionを用いてユーザの運指を取得し、間違った運指を指摘したり、運指をクラウド経由で共有化して練習を促進してくれるというものです.また、MIDIファイルから運指を生成する機能もあるので、運指番号が振られていない曲でも楽曲データさえあれば運指付きの楽譜を生成してくれます. ",
         type: 'article',
-        url: 'https://meo-cs.net/works/pianist/',
-        image: 'https://meo-cs.net/works/pianist/img/img1.jpg',
+        url: 'https://kazukiotao.com/works/pianist/',
+        image: 'https://kazukiotao.com/works/pianist/img/img1.jpg',
       },
       project: {
         "name": "pianist",

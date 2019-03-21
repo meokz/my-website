@@ -28,7 +28,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -50,8 +50,8 @@ export default {
         title: title,
         description: 'Near-eye Aerial Light Field Rendering',
         type: 'article',
-        url: 'https://meo-cs.net/works/lightfieldblender/',
-        image: 'https://meo-cs.net/works/lightfieldblender/img/Image.jpg',
+        url: 'https://kazukiotao.com/works/lightfieldblender/',
+        image: 'https://kazukiotao.com/works/lightfieldblender/img/Image.jpg',
       },
       project: {
         "name": "lightfieldblender",

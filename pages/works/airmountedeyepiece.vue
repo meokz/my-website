@@ -16,7 +16,7 @@
         <p><a href="https://doi.org/10.1145/3214907.3214908" target="_blank"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Transmissive Mirror Device based Near-Eye Displays with Wide Field of View. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214908</a></p>
         <p><a href="https://doi.org/10.1145/3174910.3174911" target="_blank"><u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Air Mounted Eyepiece: Optical See-Through HMD Design with Aerial Optical Functions. In <em>Proceedings of the 9th Augmented Human International Conference</em> (AH ’18). ACM, New York, NY, USA, Article 1, 7 pages. DOI: https://doi.org/10.1145/3174910.3174911</a></p>
         <p><a href="https://arxiv.org/abs/1710.03889" target="_blank">Yoichi Ochiai, <u>Kazuki Otao</u>, Hiroyuki Osone. 2017. Air Mounted Eyepiece: Design Methods for Aerial Optical Functions of Near-Eye and See-Through Display using Transmissive Mirror Device. In <em>ArXiv e-prints</em>. https://arxiv.org/abs/1710.03889</a></p>
-        
+
         <h3><span class="glyphicon glyphicon-leaf"></span>Media</h3>
         <p><a href="https://www.moguravr.com/siggraph-2018-e-tech-report-ar-vr/" target="_blank">【SIGGRAPH2018】先端技術コーナーを一挙レポ 日本からも多数出展, https://www.moguravr.com/siggraph-2018-e-tech-report-ar-vr/, Mogura VR, 2018.08.23</a></p>
         <p><a href="http://www.moguravr.com/pixiedusttech-ar/" target="_blank">落合陽一氏ら、AR向け技術を続々発表 キーワードは広視野・透過型, http://www.moguravr.com/pixiedusttech-ar/, Mogura VR, 2017.11.24</a></p>
@@ -60,8 +60,8 @@ export default {
         title: title,
         description: 'Transmissive Mirror Device based Head-Mounted Display',
         type: 'article',
-        url: 'https://meo-cs.net/works/airmountedeyepiece/',
-        image: 'https://meo-cs.net/works/airmountedeyepiece/img/Image.jpg',
+        url: 'https://kazukiotao.com/works/airmountedeyepiece/',
+        image: 'https://kazukiotao.com/works/airmountedeyepiece/img/Image.jpg',
       },
       project: {
         "name": "airmountedeyepiece",

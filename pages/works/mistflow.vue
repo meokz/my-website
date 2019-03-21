@@ -60,8 +60,8 @@ export default {
         title: title,
         description: 'フォグディスプレイの霧の形状を推定し、変化するスクリーンの形状に合わせて映像を投影することを目指し、実装と開発を行いました。',
         type: 'article',
-        url: 'https://meo-cs.net/works/mistflow/',
-        image: 'https://meo-cs.net/works/mistflow/img/Image.jpg',
+        url: 'https://kazukiotao.com/works/mistflow/',
+        image: 'https://kazukiotao.com/works/mistflow/img/Image.jpg',
       },
       project: {
           "name": "mistflow",

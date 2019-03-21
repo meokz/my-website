@@ -44,8 +44,8 @@ export default {
         title: title,
         description: 'ArtWorks 2018',
         type: 'article',
-        url: 'https://meo-cs.net/works/artworks2018/',
-        image: 'https://meo-cs.net/works/artworks2018/img/abstract_2.jpg',
+        url: 'https://kazukiotao.com/works/artworks2018/',
+        image: 'https://kazukiotao.com/works/artworks2018/img/abstract_2.jpg',
       },
       project: {
         "name": "artworks2018",

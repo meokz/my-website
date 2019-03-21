@@ -46,8 +46,8 @@ export default {
         title: title,
         description: 'ArtWorks2015',
         type: 'article',
-        url: 'https://meo-cs.net/works/artwork2015/',
-        image: 'https://meo-cs.net/works/artwork2015/img/yousay_ver2.jpg',
+        url: 'https://kazukiotao.com/works/artwork2015/',
+        image: 'https://kazukiotao.com/works/artwork2015/img/yousay_ver2.jpg',
       },
       project: {
         "name": "artworks2015",

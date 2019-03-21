@@ -25,7 +25,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -47,8 +47,8 @@ export default {
         title: title,
         description: 'Unityを使った映像作品。',
         type: 'article',
-        url: 'https://meo-cs.net/works/blackboard/',
-        image: 'https://meo-cs.net/works/blackboard/img/img1.jpg',
+        url: 'https://kazukiotao.com/works/blackboard/',
+        image: 'https://kazukiotao.com/works/blackboard/img/img1.jpg',
       },
       project: {
         "name": "blackboard",
