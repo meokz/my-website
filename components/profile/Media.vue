@@ -71,6 +71,13 @@ const webradio = [
 
 const web = [
   {
+    "id": 13,
+    "title" : "落合陽一の筑波大「デジタルネイチャー研究室」に潜入！人もお金も集まるイノベーションの源泉とは？",
+    "url" : "https://finders.me/articles.php?id=804",
+    "media_name" : "FINDERS",
+    "date" : "2019.03.22"
+  },
+  {
     "id": 12,
     "title" : "【特集】ミスター筑波2018 大峠和基さんインタビュー",
     "url" : "https://magazine.mast.tsukuba.ac.jp/archives/3828",
@@ -85,7 +92,7 @@ const web = [
     "date" : "2018.08.25"
   },
   {
-    "id": 10, 
+    "id": 10,
     "title" : "【SIGGRAPH2018】先端技術コーナーを一挙レポ 日本からも多数出展",
     "url" : "https://www.moguravr.com/siggraph-2018-e-tech-report-ar-vr/",
     "media_name" : "Mogura VR",
