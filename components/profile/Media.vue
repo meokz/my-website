@@ -10,7 +10,11 @@
       <ol>
         <MediaItem v-for="item in webradio" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>Web</h3>
+      <h3>Web (Personal)</h3>
+      <ol>
+        <MediaItem v-for="item in web_personal" v-bind:key="item.id" v-bind:item="item" />
+      </ol>
+      <h3>Web (Project)</h3>
       <ol>
         <MediaItem v-for="item in web" v-bind:key="item.id" v-bind:item="item" />
       </ol>
@@ -69,21 +73,23 @@ const webradio = [
   }
 ]
 
-const web = [
+const web_personal = [
   {
-    "id": 13,
+    "id": 2,
     "title" : "落合陽一の筑波大「デジタルネイチャー研究室」に潜入！人もお金も集まるイノベーションの源泉とは？",
     "url" : "https://finders.me/articles.php?id=804",
     "media_name" : "FINDERS",
     "date" : "2019.03.22"
   },
   {
-    "id": 12,
+    "id": 1,
     "title" : "【特集】ミスター筑波2018 大峠和基さんインタビュー",
     "url" : "https://magazine.mast.tsukuba.ac.jp/archives/3828",
     "media_name" : "MAST Web",
     "date" : "2019.01.29"
-  },
+  }
+]
+const web = [
   {
     "id": 11,
     "title" : "注目の網膜投影技術 落合陽一氏らが開発した実機を体験",
@@ -171,7 +177,8 @@ export default {
     return {
       radio: radio,
       webradio: webradio,
-      web: web
+      web_personal: web_personal,
+      web: web,
     }
   }
 }

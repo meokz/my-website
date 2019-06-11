@@ -17,9 +17,9 @@
 
     <Publication v-bind:isEnglish="isEnglish"/>
 
-    <Exhibition />
+    <Achievement v-bind:isEnglish="isEnglish"/>
 
-    <Achievement />
+    <Exhibition />
 
     <Media />
 
