@@ -74,17 +74,17 @@
             <div class="col-xs-12 col-sm-4">
               <Work v-bind:project="entertainment[3]"/>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <!-- <div class="col-xs-12 col-sm-4">
               <Work v-bind:project="entertainment[4]"/>
             </div>
             <div class="col-xs-12 col-sm-4">
               <Work v-bind:project="entertainment[5]"/>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
 
-      <div>
+      <!-- <div>
         <h2>Hackathon</h2>
         <div>
           <div class="row">
@@ -104,9 +104,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div>
+      <!-- <div>
         <h2>ArtWorks</h2>
         <div>
           <div class="row">
@@ -126,7 +126,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </section>
   </div>
@@ -193,6 +193,16 @@ const research = [
     ]
   },
   {
+    "title" : "Glassbeads Display",
+    "url" : "glassbeads",
+    "people" : "3",
+    "date" : "2017/05 - 2019/07",
+    "description" : "半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。",
+    "tag" : [
+      "Media Ambition Tokyo 2018", "SIGGRAPH Asia 2017", "HCII 2019"
+    ]
+  },
+  {
     "title" : "Light Field Blender",
     "url" : "lightfieldblender",
     "people" : "6",
@@ -210,16 +220,6 @@ const research = [
     "description" : "面対称結像光学系を用いて空中に仮想レンズを生成し，VR用のHMDと同等の広視野角な拡張現実映像を眼前に提示します。",
     "tag" : [
       "SIGGRAPH 2018", "Augmented Human 2018"
-    ]
-  },
-  {
-    "title" : "Glassbeads Display",
-    "url" : "glassbeads",
-    "people" : "5",
-    "date" : "2017/05 -",
-    "description" : "半面を鏡でコーティングしたガラスビーズを空中スクリーンとして使用することで，高輝度・広視野角な空中映像を実現します。",
-    "tag" : [
-      "Media Ambition Tokyo 2018", "SIGGRAPH Asia 2017"
     ]
   },
   {
@@ -278,14 +278,14 @@ const product = [
 ]
 
 const entertainment = [
-  {
-    "title" : "ピタゴラメーカー",
-    "url" : "pitagora",
-    "people" : "2",
-    "date" : "2017/12",
-    "description" : "自分だけのピタゴラスイッチを作って遊ぼう！",
-    "tag" : []
-  },
+  // {
+  //   "title" : "ピタゴラメーカー",
+  //   "url" : "pitagora",
+  //   "people" : "2",
+  //   "date" : "2017/12",
+  //   "description" : "自分だけのピタゴラスイッチを作って遊ぼう！",
+  //   "tag" : []
+  // },
   {
     "title" : "Re:ink：干渉可能なプロジェクションマッピング",
     "url" : "reink",
@@ -322,14 +322,14 @@ const entertainment = [
     "description" : "大蛇の乱は，全長2mもある5体の大蛇を複数人のプレイヤーで協力しながら撃破するアトラクション企画です．現実世界とデジタルな世界がARによって結びつきます。",
     "tag" : []
   },
-  {
-    "title" : "PokeDora",
-    "url" : "pokedora",
-    "people" : "1",
-    "date" : "2013",
-    "description" : "本来はUIの制作に使用されるSwingを元に簡単にゲームが作れるライブラリを制作しました。また，自作したライブラリを用いてポケモン風のゲームを作りデモを行いました。",
-    "tag" : []
-  }
+  // {
+  //   "title" : "PokeDora",
+  //   "url" : "pokedora",
+  //   "people" : "1",
+  //   "date" : "2013",
+  //   "description" : "本来はUIの制作に使用されるSwingを元に簡単にゲームが作れるライブラリを制作しました。また，自作したライブラリを用いてポケモン風のゲームを作りデモを行いました。",
+  //   "tag" : []
+  // }
 ]
 
 const hackathon = [
