@@ -10,7 +10,11 @@
       <ol>
         <MediaItem v-for="item in webradio" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>Web</h3>
+      <h3>Web (Personal)</h3>
+      <ol>
+        <MediaItem v-for="item in web_personal" v-bind:key="item.id" v-bind:item="item" />
+      </ol>
+      <h3>Web (Project)</h3>
       <ol>
         <MediaItem v-for="item in web" v-bind:key="item.id" v-bind:item="item" />
       </ol>
@@ -69,13 +73,29 @@ const webradio = [
   }
 ]
 
-const web = [
+const web_personal = [
   {
-    "id": 12,
+    "id": 2,
+    "title" : "落合陽一の筑波大「デジタルネイチャー研究室」に潜入！人もお金も集まるイノベーションの源泉とは？",
+    "url" : "https://finders.me/articles.php?id=804",
+    "media_name" : "FINDERS",
+    "date" : "2019.03.22"
+  },
+  {
+    "id": 1,
     "title" : "【特集】ミスター筑波2018 大峠和基さんインタビュー",
     "url" : "https://magazine.mast.tsukuba.ac.jp/archives/3828",
     "media_name" : "MAST Web",
     "date" : "2019.01.29"
+  }
+]
+const web = [
+  {
+    "id": 12,
+    "title" : "筑波大学とピクシーダストテクノロジーズ株式会社、どの位置から見ても鮮明な空中画像を提供できるガラスビーズを用いた空中映像投影手法を発表",
+    "url" : "https://shiropen.com/seamless/glass-beads-display",
+    "media_name" : "Seamless",
+    "date" : "2019.07.25"
   },
   {
     "id": 11,
@@ -85,7 +105,7 @@ const web = [
     "date" : "2018.08.25"
   },
   {
-    "id": 10, 
+    "id": 10,
     "title" : "【SIGGRAPH2018】先端技術コーナーを一挙レポ 日本からも多数出展",
     "url" : "https://www.moguravr.com/siggraph-2018-e-tech-report-ar-vr/",
     "media_name" : "Mogura VR",
@@ -164,7 +184,8 @@ export default {
     return {
       radio: radio,
       webradio: webradio,
-      web: web
+      web_personal: web_personal,
+      web: web,
     }
   }
 }

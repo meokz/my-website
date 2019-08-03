@@ -30,22 +30,22 @@
           <p>Foundation thesis in National Institute of Technology, Tokuyama College.（Advisor, Takanori Koga）</p>
         </div>
       </ol>
-      <h3 v-show="!isEnglish">査読あり国際会議論文 - オーラル発表</h3>
+      <h3 v-show="!isEnglish">査読あり国際会議 - オーラル発表</h3>
       <h3 v-show="isEnglish">International Conference with Peer Review - Oral Presentation</h3>
       <ol>
         <ListItem v-for="item in international_papers" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3 v-show="!isEnglish">査読あり国際会議論文 - ポスター発表</h3>
+      <h3 v-show="!isEnglish">査読あり国際会議 - ポスター発表</h3>
       <h3 v-show="isEnglish">International Conference with Peer Review - Posters</h3>
       <ol>
         <ListItem v-for="item in posters" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3 v-show="!isEnglish">査読あり国際会議論文 - デモ発表</h3>
+      <h3 v-show="!isEnglish">査読あり国際会議 - デモ発表</h3>
       <h3 v-show="isEnglish">International Conference with Peer Review - Demos</h3>
       <ol>
         <ListItem v-for="item in demos" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3 v-show="!isEnglish">国際会議論文 - 招待講演</h3>
+      <h3 v-show="!isEnglish">国際会議 - 招待講演</h3>
       <h3 v-show="isEnglish">International Conference - Invited Talk</h3>
       <ol>
         <ListItem v-for="item in invited_talk" v-bind:key="item.id" v-bind:item="item" />
@@ -155,6 +155,10 @@ const international_papers = [
 
 const posters = [
   {
+    "title": "Shinnosuke Ando, <u>Kazuki Otao</u>, Yoichi Ochiai. 2019. Glass-Beads Display: Evaluation for Aerial Graphics Rendered by Retro-Reflective Particles. In <em>HCI International 2019 Posters</em> (HCII 2019). Communications in Computer and Information Science, vol 1032. Springer, Cham",
+    "url": "../works/glassbeads"
+  },
+  {
     "title" : "Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Posters</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3230744.3230810",
     "url" : "../works/retinalprojector/"
   },
@@ -169,6 +173,10 @@ const posters = [
 ]
 
 const demos = [
+  {
+    "title" : "Takahito Aoto, Yuta Itoh, <u>Kazuki Otao</u>, Kazuki Takazawa, and Yoichi Ochiai. 2018. A design for optical cloaking display. In <em>SIGGRAPH ’19 Emerging Technologies</em> (SIGGRAPH ’19). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3305367.3327979",
+    "url" : "./"
+  },
   {
     "title" : "Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214910",
     "url" : "../works/retinalprojector/"
@@ -214,8 +222,8 @@ export default {
         title: 'Publication',
         description: 'Publication | Kazuki Otao / 大峠和基',
         type: 'article',
-        url: 'https://meo-cs.net/publication',
-        image: 'https://meo-cs.net/publication/img/mistflow.jpg',
+        url: 'https://kazukiotao.com/publication',
+        image: 'https://kazukiotao.com/publication/img/mistflow.jpg',
       },
       books_jp: books_jp,
       books_en: books_en,

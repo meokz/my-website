@@ -57,8 +57,8 @@ export default {
         title: title,
         description: 'ArtWorks2013',
         type: 'article',
-        url: 'https://meo-cs.net/works/artworks2013/',
-        image: 'https://meo-cs.net/works/artworks2013/img/pokedora.png',
+        url: 'https://kazukiotao.com/works/artworks2013/',
+        image: 'https://kazukiotao.com/works/artworks2013/img/pokedora.png',
       },
       project: {
         "name": "artworks2013",

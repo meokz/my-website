@@ -35,7 +35,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -57,8 +57,8 @@ export default {
         title: title,
         description: 'ProjectQuestは，与えられたシステム開発のお題をマッチングしたエンジニア/デザイナと一緒に取り組むことで，様々な人と出会いつつ技術を高めることができるWebサービスです。',
         type: 'article',
-        url: 'https://meo-cs.net/works/projectquest/',
-        image: 'https://meo-cs.net/works/projectquest/img/projectquest.png',
+        url: 'https://kazukiotao.com/works/projectquest/',
+        image: 'https://kazukiotao.com/works/projectquest/img/projectquest.png',
       },
       project: {
         "name": "projectquest",

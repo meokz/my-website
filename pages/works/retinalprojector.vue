@@ -54,8 +54,8 @@ export default {
         title: title,
         description: 'Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials.',
         type: 'article',
-        url: 'https://meo-cs.net/works/retinalprojector/',
-        image: 'https://meo-cs.net/works/retinalprojector/img/Image.jpg',
+        url: 'https://kazukiotao.com/works/retinalprojector/',
+        image: 'https://kazukiotao.com/works/retinalprojector/img/Image.jpg',
       },
       project: {
         "name": "retinalprojector",

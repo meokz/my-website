@@ -38,11 +38,13 @@ h4 {
 const carrer = {
   "academic_jp": [
     "2012/04 - 2017/03 　徳山工業高等専門学校 情報電子工学科 (古賀崇了研究室)",
-    "2017/04 - present. 　筑波大学 情報学群 情報メディア創成学類 (落合陽一研究室)"
+    "2017/04 - 2019/03 　筑波大学 情報学群 情報メディア創成学類 (落合陽一研究室)",
+    "2019/04 - present. 　筑波大学大学院 図書館情報メディア研究科 図書館情報メディア専攻 (落合陽一研究室)"
   ],
   "academic_en": [
-    "2012/04 - 2017/03 　National Institute of Technology, Tokuyama College. (Takanori Koga, Soft Computing Lab.)",
-    "2017/04 - present. 　University of Tsukuba (Yoichi Ochiai, Digital Nature Group.)"
+    "2012/04 - 2017/03 　Department of Computer Science and Electronic Engineering, National Institute of Technology, Tokuyama College. (Takanori Koga, Soft Computing Lab.)",
+    "2017/04 - 2019/03. 　College of Media Arts, Science and Technology, School of Informatics, University of Tsukuba (Yoichi Ochiai, Digital Nature Group.)",
+    "2017/04 - present. 　Graduate School of Library, Information and Media Studies, University of Tsukuba (Yoichi Ochiai, Digital Nature Group.)"
   ],
   "work_jp": [
     "2015/08 - 2015/09 　チームラボ株式会社 インタラクティブチーム (就業インターン)",

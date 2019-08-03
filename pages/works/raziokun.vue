@@ -25,7 +25,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -45,8 +45,8 @@ export default {
         title: "RAZIOくん",
         description: 'RAZIOくん―ラジオ体操練習支援システム―は、Kinectを用いてラジオ体操の採点を行うシステムです。',
         type: 'article',
-        url: 'https://meo-cs.net/works/raziokun/',
-        image: 'https://meo-cs.net/works/raziokun/img/img1.jpg',
+        url: 'https://kazukiotao.com/works/raziokun/',
+        image: 'https://kazukiotao.com/works/raziokun/img/img1.jpg',
       },
       project: {
         "name": "raziokun",

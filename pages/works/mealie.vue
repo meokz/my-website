@@ -19,7 +19,7 @@
     <div class="row">
       <iframe src="//www.slideshare.net/slideshow/embed_code/key/LiJOSxVTVIS2rZ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"><strong><a href="//www.slideshare.net/ShunnosukeKataoka/u222016mealie-84964898" title="U-22プログラミングコンテスト2016「Mealie」発表スライド" target="_blank">U-22プログラミングコンテスト2016「Mealie」発表スライド</a></strong> from <strong><a href="https://www.slideshare.net/ShunnosukeKataoka" target="_blank">Shunnosuke Kataoka</a></strong></div>
     </div>
-    
+
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <a class="thumbnail" href="/works/mealie/img/img1.png">
@@ -32,7 +32,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -52,8 +52,8 @@ export default {
         title: "Mealie",
         description: 'Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。',
         type: 'article',
-        url: 'https://meo-cs.net/works/mealie/',
-        image: 'https://meo-cs.net/works/mealie/img/img1.png',
+        url: 'https://kazukiotao.com/works/mealie/',
+        image: 'https://kazukiotao.com/works/mealie/img/img1.png',
       },
       project: {
         "name": "mealie",

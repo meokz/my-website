@@ -74,8 +74,8 @@ export default {
         title: title,
         description: 'ArtWorks2014',
         type: 'article',
-        url: 'https://meo-cs.net/works/artworks2014/',
-        image: 'https://meo-cs.net/works/artworks2014/img/piano1.jpg',
+        url: 'https://kazukiotao.com/works/artworks2014/',
+        image: 'https://kazukiotao.com/works/artworks2014/img/piano1.jpg',
       },
       project: {
         "name": "artworks2014",

@@ -44,7 +44,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -66,8 +66,8 @@ export default {
         title: title,
         description: 'Smart枕は、Android端末と枕型デバイスが連携する新しいライフハックプロダクトです。',
         type: 'article',
-        url: 'https://meo-cs.net/works/smartmakura/',
-        image: 'https://meo-cs.net/works/smartmakura/img/img1.jpg',
+        url: 'https://kazukiotao.com/works/smartmakura/',
+        image: 'https://kazukiotao.com/works/smartmakura/img/img1.jpg',
       },
       project: {
         "name": "smartmakura",

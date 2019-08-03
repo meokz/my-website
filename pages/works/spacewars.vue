@@ -66,8 +66,8 @@ export default {
         title: title,
         description: '2人対戦型のゲーム。ゲームコントローラ対応.',
         type: 'article',
-        url: 'https://meo-cs.net/works/spacewars/',
-        image: 'https://meo-cs.net/works/spacewars/img/img1.jpg',
+        url: 'https://kazukiotao.com/works/spacewars/',
+        image: 'https://kazukiotao.com/works/spacewars/img/img1.jpg',
       },
       project: {
         "name": "spacewars",

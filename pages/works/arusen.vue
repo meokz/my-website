@@ -24,7 +24,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -46,8 +46,8 @@ export default {
         title: title,
         description: '高専でありがちな川柳をGoogle Chromeの上から投稿・閲覧・いいねできるChrome拡張機能です。',
         type: 'article',
-        url: 'https://meo-cs.net/works/arusen/',
-        image: 'https://meo-cs.net/works/arusen/img/img_top.jpg',
+        url: 'https://kazukiotao.com/works/arusen/',
+        image: 'https://kazukiotao.com/works/arusen/img/img_top.jpg',
       },
       project: {
         "name": "arusen",

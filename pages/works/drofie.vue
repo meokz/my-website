@@ -37,7 +37,7 @@
         </a>
       </div>
     </div>
-      
+
   </div>
 </template>
 
@@ -60,8 +60,8 @@ export default {
         title: title,
         description: 'drofieは観光地などに設置されたドローンで特別な自撮りを撮影し、旅の思い出を作ることのできるサービスです。',
         type: 'article',
-        url: 'https://meo-cs.net/works/drofie/',
-        image: 'https://meo-cs.net/works/drofie/img/img1.png',
+        url: 'https://kazukiotao.com/works/drofie/',
+        image: 'https://kazukiotao.com/works/drofie/img/img1.png',
       },
       project: {
         "name": "drofie",

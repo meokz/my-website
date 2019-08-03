@@ -59,7 +59,7 @@
         </a>
       </div>
     </div>
-    
+
   </div>
 </template>
 
@@ -81,8 +81,8 @@ export default {
         title: title,
         description: '徳山高専の機会電気工学科, 情報電子工学科, 土木建築工学科の3つの学科がそれぞれの技術を生かし、1つの作品を創り上げるメイン企画.今年のタイトルは「Re:ink」真っ白になった工場を来場者の手によって蘇らせる企画です。',
         type: 'article',
-        url: 'https://meo-cs.net/works/reink/',
-        image: 'https://meo-cs.net/works/reink/img/img_top.jpg',
+        url: 'https://kazukiotao.com/works/reink/',
+        image: 'https://kazukiotao.com/works/reink/img/img_top.jpg',
       },
       project: {
         "name": "reink",
