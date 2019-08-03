@@ -5,10 +5,11 @@
     <div class="row">
       <div class="work_caption">
         <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
+        <p><a href="./" target="_blank">IDW 2018 Technical Summary [ready]</a></p>
         <p><a href="/works/mistflow/docs/mistflow.pdf" target="_blank">SIGGRAPH Asia 2017 Two-page Abstract [PDF 4.5MB]</a></p>
         <p><a href="/works/mistflow/docs/mistflow-poster.pdf" target="_blank">SIGGRAPH Asia 2017 Poster [PDF 4.1MB]</a></p>
-        <p><a href="/works/mistflow/docs/paper-Interaction17.pdf" target="_blank">Paper Preprint (Japanese) [PDF 2.8MB]</a></p>
-        <p><a href="/works/mistflow/docs/presen-tct.pdf" target="_blank">Presentation (Japanese) [PDF 2.8MB]</a></p>
+        <p><a href="/works/mistflow/docs/paper-Interaction17.pdf" target="_blank">IPSJ Interaction 2017 Paper (Japanese) [PDF 2.8MB]</a></p>
+        <p><a href="/works/mistflow/docs/presen-tct.pdf" target="_blank">IPSJ Interaction 2017 Presentation (Japanese) [PDF 2.8MB]</a></p>
         <h3><span class="glyphicon glyphicon-wrench"></span>Used Tools</h3>
         <p>Unity, Leap Motion</p>
         <h3><span class="glyphicon glyphicon-list"></span>Publication</h3>

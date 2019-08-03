@@ -7,7 +7,7 @@
         <h3><span class="glyphicon glyphicon-link"></span>Web</h3>
         <p><a href="http://digitalnature.slis.tsukuba.ac.jp/2017/10/air-mounted-eyepiece/" target="_blank">Air Mounted Eyepiece - Digital Nature Group</a></p>
         <h3><span class="glyphicon glyphicon-file"></span>Documents</h3>
-        <p><a href="/works/airmountedeyepiece/docs/2018-ah-ame.pdf" target="_blank">Augmented Human 2018 Long Paper Preprint [PDF 4.7MB]</a></p>
+        <p><a href="/works/airmountedeyepiece/docs/2018-ah-ame.pdf" target="_blank">Augmented Human 2018 Paper [PDF 4.7MB]</a></p>
         <p><a href="/works/airmountedeyepiece/docs/2018-siggraph-ame.pdf" target="_blank">SIGGRAPH 2018 Two-page Abstract [PDF 2.6MB]</a></p>
         <p><a href="/works/airmountedeyepiece/docs/2017-arxiv-ame.pdf" target="_blank">Arxiv e-Print [PDF 1.2MB]</a></p>
 
