@@ -91,6 +91,13 @@ const web_personal = [
 ]
 const web = [
   {
+    "id": 12,
+    "title" : "筑波大学とピクシーダストテクノロジーズ株式会社、どの位置から見ても鮮明な空中画像を提供できるガラスビーズを用いた空中映像投影手法を発表",
+    "url" : "https://shiropen.com/seamless/glass-beads-display",
+    "media_name" : "Seamless",
+    "date" : "2019.07.25"
+  },
+  {
     "id": 11,
     "title" : "注目の網膜投影技術 落合陽一氏らが開発した実機を体験",
     "url" : "https://www.moguravr.com/dng-retinal-projector/",
