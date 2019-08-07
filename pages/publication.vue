@@ -175,7 +175,7 @@ const posters = [
 const demos = [
   {
     "title" : "Takahito Aoto, Yuta Itoh, <u>Kazuki Otao</u>, Kazuki Takazawa, and Yoichi Ochiai. 2018. A design for optical cloaking display. In <em>SIGGRAPH ’19 Emerging Technologies</em> (SIGGRAPH ’19). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3305367.3327979",
-    "url" : "./"
+    "url" : "./works/cloaking"
   },
   {
     "title" : "Yoichi Ochiai, <u>Kazuki Otao</u>, Yuta Itoh, Shouki Imai, Kazuki Takazawa, Hiroyuki Osone, Atsushi Mori, and Ippei Suzuki. 2018. Make your own Retinal Projector: Retinal Near-Eye Displays via Metamaterials. In <em>SIGGRAPH ’18 Emerging Technologies</em> (SIGGRAPH ’18). ACM, New York, NY, USA, 2 pages. DOI: https://doi.org/10.1145/3214907.3214910",
