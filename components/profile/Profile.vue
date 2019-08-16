@@ -10,12 +10,12 @@
         <div v-show="!isEnglish">
           <h3>大峠 和基 - おおたお かずき</h3>
           <p>{{ profile.jp }}</p>
-          <p align="right"><a href="/profile/Resume2017.pdf" target="_blank">{{detail}} Resume (英語)</a></p>
+          <p align="right"><a href="/profile/resume_2019.pdf" target="_blank">{{detail}} Resume [PDF 51KB] (English)</a></p>
         </div>
         <div v-show="isEnglish">
           <h3>大峠 和基 - Kazuki Otao</h3>
           <p>{{ profile.en }}</p>
-          <p align="right"><a href="/profile/Resume2017.pdf" target="_blank">{{detail}} Resume</a></p>
+          <p align="right"><a href="/profile/resume_2019.pdf" target="_blank">{{detail}} Resume [PDF 51KB]</a></p>
         </div>
 
       </div>
