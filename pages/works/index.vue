@@ -29,6 +29,9 @@
             <div class="col-xs-12 col-sm-4">
               <Work v-bind:project="research[4]"/>
             </div>
+            <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="research[5]"/>
+            </div>
           </div>
         </div>
       </div>
@@ -182,6 +185,16 @@ import MyHeader from '~/components/MyHeader.vue'
 import Work from '~/components/works/Work.vue'
 
 const research = [
+  {
+    "title" : "Optical Cloaking Display",
+    "url" : "cloaking",
+    "people" : "6",
+    "date" : "2019/01 -",
+    "description" : "面対称結像光学系を使用した光学迷彩 (透明マント)。",
+    "tag" : [
+      "SIGGRAPH 2019"
+    ]
+  },
   {
     "title" : "Make your own Retinal Projector",
     "url" : "retinalprojector",
