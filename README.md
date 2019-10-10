@@ -2,19 +2,17 @@
 
 ## Build Setup
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# generate static project
-$ npm run generate
+install dependencies
+```sh
+$ npm install
 ```
 
-## Git
+serve with hot reload at localhost:3000
+```sh
+$ npm run dev
+```
 
-``` bash
-$ git
+generate static project
+```sh
+$ npm run generate
 ```

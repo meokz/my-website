@@ -5,30 +5,18 @@
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="/profile/portrait/img01.jpg">
-      </div>
-      <div class="item">
-        <img src="/profile/portrait/img02.jpg">
+        <img src="/profile/portrait/img07.jpg">
       </div>
       <div class="item">
         <img src="/profile/portrait/img03.jpg">
       </div>
       <div class="item">
-        <img src="/profile/portrait/img04.jpg">
-      </div>
-      <div class="item">
         <img src="/profile/portrait/img05.jpg">
-      </div>
-      <div class="item">
-        <img src="/profile/portrait/img06.jpg">
       </div>
     </div>
 
