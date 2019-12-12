@@ -33,6 +33,17 @@
               <Work v-bind:project="research[5]"/>
             </div>
           </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="research[6]"/>
+            </div>
+            <!-- <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="research[4]"/>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <Work v-bind:project="research[5]"/>
+            </div> -->
+          </div>
         </div>
       </div>
 
@@ -196,11 +207,21 @@ const research = [
     ]
   },
   {
+    "title" : "Fundus imaging using DCRA",
+    "url" : "fundus",
+    "people" : "4",
+    "date" : "2018/12 - 2019/11",
+    "description" : "面対称結像光学系を使用した眼底撮影手法。",
+    "tag" : [
+      "SIGGRAPH Asia 2019"
+    ]
+  },
+  {
     "title" : "Make your own Retinal Projector",
     "url" : "retinalprojector",
     "people" : "8",
     "date" : "2017/09 -",
-    "description" : "面対称結像光学系を使用した網膜投影。",
+    "description" : "面対称結像光学系を使用した網膜投影手法。",
     "tag" : [
       "SIGGRAPH 2018"
     ]
@@ -216,16 +237,6 @@ const research = [
     ]
   },
   {
-    "title" : "Light Field Blender",
-    "url" : "lightfieldblender",
-    "people" : "6",
-    "date" : "2017/05 - 2017/11",
-    "description" : "Light Field Blenderは拡張現実のための新しいヘッドマウントディスプレイです。小型・軽量化が可能であり，被写界深度を再現します。",
-    "tag" : [
-      "SIGGRAPH Asia 2017", "Ars Electronica 2017"
-    ]
-  },
-  {
     "title" : "Air Mounted Eyepiece",
     "url" : "airmountedeyepiece",
     "people" : "5",
@@ -233,6 +244,16 @@ const research = [
     "description" : "面対称結像光学系を用いて空中に仮想レンズを生成し，VR用のHMDと同等の広視野角な拡張現実映像を眼前に提示します。",
     "tag" : [
       "SIGGRAPH 2018", "Augmented Human 2018"
+    ]
+  },
+  {
+    "title" : "Light Field Blender",
+    "url" : "lightfieldblender",
+    "people" : "6",
+    "date" : "2017/05 - 2017/11",
+    "description" : "面対称結像光学系を用いて空中にレンズアレイを転写し、眼前に被写界深度を伴ったLight Fieldを提示します。",
+    "tag" : [
+      "SIGGRAPH Asia 2017", "Ars Electronica 2017"
     ]
   },
   {

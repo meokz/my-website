@@ -155,8 +155,8 @@ const international_papers = [
 
 const posters = [
    {
-    "title": "???, <u>Kazuki Otao</u>,???. 2019. ???. In <em>SIGGRAPH Asia 2019 Posters</em> (SA '19). ??? (to appear)",
-    "url": "."
+    "title": "Yui Atarashi, <u>Kazuki Otao</u>, Takahito Aoto, and Yoichi Ochiai. 2019. Fundus imaging using DCRA toward large eyebox. In <em>SIGGRAPH Asia 2019 Posters</em> (SA ’19). ACM, New York, NY, USA, Article 29, 2 pages. DOI: https://doi.org/10.1145/3355056.3364579",
+    "url": "../works/fundus"
   },
   {
     "title": "Shinnosuke Ando, <u>Kazuki Otao</u>, Yoichi Ochiai. 2019. Glass-Beads Display: Evaluation for Aerial Graphics Rendered by Retro-Reflective Particles. In <em>HCI International 2019 Posters</em> (HCII 2019). Communications in Computer and Information Science, vol 1032. Springer, Cham",
