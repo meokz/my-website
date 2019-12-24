@@ -6,6 +6,7 @@
       <div class="tag-no-color">
         <ul>
           <li class="tag-blue">C#</li>
+          <li class="tag-blue">Python</li>
           <li class="tag-blue">Unity</li>
         </ul>
       </div>
@@ -13,7 +14,6 @@
       <div class="tag-no-color">
         <ul>
           <li class="tag-blue">Java</li>
-          <li class="tag-blue">Python</li>
           <li class="tag-blue">Git</li>
           <li class="tag-yellow">AviUtl</li>
           <li class="tag-yellow">AfterEffects</li>
@@ -23,21 +23,21 @@
       <div class="tag-no-color">
         <ul>
           <li class="tag-blue">C / C++</li>
+          <li class="tag-blue">Swift (iOS)</li>
           <li class="tag-blue">Java (Android)</li>
-          <li class="tag-blue">Bootstrap</li>
-          <li class="tag-yellow">Blender</li>
-          <li class="tag-yellow">Photoshop</li>
         </ul>
       </div>
       <h3>Basic</h3>
       <div class="tag-no-color">
         <ul>
-          <li class="tag-blue">Ruby</li>
-          <li class="tag-blue">Swift (iOS)</li>
-          <li class="tag-blue">Go</li>
-          <li class="tag-blue">Visual Basic</li>
           <li class="tag-blue">HTML / CSS</li>
+          <li class="tag-blue">JavaScript / TypeScript</li>
+          <li class="tag-blue">React.js</li>
           <li class="tag-blue">Vue.js</li>
+          <li class="tag-blue">Visual Basic</li>
+          <li class="tag-blue">AWS</li>
+          <li class="tag-yellow">Blender</li>
+          <li class="tag-yellow">Photoshop</li>
           <li class="tag-yellow">Illustrator</li>
           <li class="tag-yellow">Premiere Pro</li>
           <!-- <li>THREE.js</li> -->
