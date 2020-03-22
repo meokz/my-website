@@ -29,7 +29,9 @@ module.exports = {
     ],
     script: [
       { src: "/css-js/jquery-3.2.1.min.js"},
-      { src: "/css-js/honoka/js/bootstrap.min.js"}
+      { src: "/css-js/honoka/js/bootstrap.min.js"},
+      { src: "https://www.googletagmanager.com/gtag/js?id=UA-63575942-2", async: true},
+      { src: "/css-js/analytics.js"}
     ]
   },
   loading: { color: '#3B8070' },
