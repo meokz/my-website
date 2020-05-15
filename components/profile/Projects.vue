@@ -15,6 +15,16 @@ import ProjectDetail from '~/components/profile/ProjectDetail.vue'
 
 const projects = [
   {
+    name: "telorain",
+    title_jp: "telorain: SNS向けテロップ自動生成アプリ",
+    title_en: "telorain: Automatic caption generation for videos",
+    description_jp: "誰でも簡単にテロップを作ることができるiOSアプリを開発しました．開発したアプリでは，動画を選択するだけでテロップが自動で生成され，必要に応じてユーザが編集を加えることができます．",
+    description_en: "We developed an iOS app with an automatic caption generation algorithm for entertainment movies.",
+    tag: [
+      "未踏"
+    ]
+  },
+  {
     name: "mistflow",
     title_jp: "MistFlow",
     title_en: "MistFlow: A Fog Display for Visualization of Adaptive Shape-Changing Flow",
@@ -22,16 +32,6 @@ const projects = [
     description_en: "We propose an interactive fog display to express the adaptive shape-changing flow of a fog screen caused by interactions with the viewer. We present the design specifications of the proposed system, evaluation results of a user study, and some application contents to use the proposed system effectively.",
     tag: [
       "IDW 2018", "SIGGRAPH Asia 2017", "情報処理学会インタラクション2017"
-    ]
-  }, 
-  {
-    name: "mealie",
-    title_jp: "Mealie：学食食券オンライン予約システム",
-    title_en: "Mealie: Online Reservation System for Campus Cafeteria",
-    description_jp: "Mealieは教室に備え付けられたタブレット端末から食堂の食券を予約することができるサービスです。遠い食堂まで行く手間を省き，自分の食べたいメニューを確実に予約します。",
-    description_en: "We developed an online reservation system for our college cafeteria. Server-side is written by Ruby on Rails and source code is available in Github.",
-    tag: [
-      "U-22プロコン 経済産業省商務情報政策局長賞"
     ]
   },
   {
@@ -51,17 +51,7 @@ const projects = [
     tag: [
       "パソコン甲子園2014"
     ]
-  }, 
-  {
-    name: "spacewars",
-    title_jp: "SpaceWars",
-    title_en: "SpaceWars",
-    description_jp: "自ユニットを弾き飛ばして敵ユニットに攻撃します。ユニットはHPが0になるか，ステージから落とされると消滅します。いろいろな戦略を楽しむだけでなく，グラフィクスエフェクトと物理演算による爽快なプレイを楽しむことができます。",
-    description_en: "We implemented a computer game using Unity. We designed a character and created a graphical effect.",
-    tag: [
-      "コンフェス2015 ソフトウェア部門1位"
-    ]
-  }, 
+  }
 ]
 
 export default {
