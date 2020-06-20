@@ -21,7 +21,7 @@ const projects = [
     description_jp: "誰でも簡単にテロップを作ることができるiOSアプリを開発しました．開発したアプリでは，動画を選択するだけでテロップが自動で生成され，必要に応じてユーザが編集を加えることができます．",
     description_en: "We developed an iOS app with an automatic caption generation algorithm for entertainment movies.",
     tag: [
-      "未踏"
+      "未踏スパクリ"
     ]
   },
   {
