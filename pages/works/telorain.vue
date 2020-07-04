@@ -16,6 +16,7 @@
         <p><a href="https://www.ipa.go.jp/jinzai/mitou/2019/20200528.html" target="_blank">2019年度未踏事業 スーパークリエータ認定</a></p>
         <p><a href="https://www.ipa.go.jp/jinzai/mitou/2019/gaiyou_ig-3.html" target="_blank">2019年度未踏事業 「機械学習を用いたSNS向けテロップ自動生成」採択（PM: 五十嵐 悠紀）</a></p>
         <h3><span class="glyphicon glyphicon-leaf"></span>Media</h3>
+        <p><a href="https://careerhack.en-japan.com/report/detail/1403" target="_blank">初心者でもYouTube風「テロップ」を簡単に。世界一やさしい動画編集アプリ誕生秘話, https://careerhack.en-japan.com/report/detail/1403, キャリアハック, 2020.06.23</a></p>
         <p><a href="https://rkb.jp/e-sekai/" target="_blank">エンタテ！区, https://rkb.jp/e-sekai/, RKB毎日放送, 2020.06.17</a></p>
       </div>
     </div>

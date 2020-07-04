@@ -10,9 +10,13 @@
       <ol>
         <MediaItem v-for="item in webradio" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>Web (Personal)</h3>
+      <h3>Web</h3>
       <ol>
         <MediaItem v-for="item in web_personal" v-bind:key="item.id" v-bind:item="item" />
+      </ol>
+      <h3>TV (Project)</h3>
+      <ol>
+        <MediaItem v-for="item in tv_project" v-bind:key="item.id" v-bind:item="item" />
       </ol>
       <h3>Web (Project)</h3>
       <ol>
@@ -75,6 +79,13 @@ const webradio = [
 
 const web_personal = [
   {
+    "id": 3,
+    "title" : "初心者でもYouTube風「テロップ」を簡単に。世界一やさしい動画編集アプリ誕生秘話",
+    "url" : "https://careerhack.en-japan.com/report/detail/1403",
+    "media_name" : "キャリアハック",
+    "date" : "2020.06.23"
+  },
+  {
     "id": 2,
     "title" : "落合陽一の筑波大「デジタルネイチャー研究室」に潜入！人もお金も集まるイノベーションの源泉とは？",
     "url" : "https://finders.me/articles.php?id=804",
@@ -89,6 +100,17 @@ const web_personal = [
     "date" : "2019.01.29"
   }
 ]
+
+const tv_project = [
+  {
+    "id": 1,
+    "title" : "エンタテ！区",
+    "url" : "https://rkb.jp/e-sekai/",
+    "media_name" : "RKB毎日放送",
+    "date" : "2020.06.17"
+  }
+]
+
 const web = [
   {
     "id": 12,
@@ -186,6 +208,7 @@ export default {
       webradio: webradio,
       web_personal: web_personal,
       web: web,
+      tv_project: tv_project
     }
   }
 }
