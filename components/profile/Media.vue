@@ -2,25 +2,25 @@
   <div class="media">
     <h2>Media</h2>
     <div>
-      <h3>Radio</h3>
+      <!-- <h3>Radio</h3>
       <ol>
         <MediaItem v-for="item in radio" v-bind:key="item.id" v-bind:item="item" />
+      </ol> -->
+      <h3>Web</h3>
+      <ol>
+        <MediaItem v-for="item in web_personal" v-bind:key="item.id" v-bind:item="item" />
+      </ol>
+      <h3>Web (Project)</h3>
+      <ol>
+        <MediaItem v-for="item in web" v-bind:key="item.id" v-bind:item="item" />
       </ol>
       <h3>Web Radio</h3>
       <ol>
         <MediaItem v-for="item in webradio" v-bind:key="item.id" v-bind:item="item" />
       </ol>
-      <h3>Web</h3>
-      <ol>
-        <MediaItem v-for="item in web_personal" v-bind:key="item.id" v-bind:item="item" />
-      </ol>
-      <h3>TV (Project)</h3>
+      <h3>TV</h3>
       <ol>
         <MediaItem v-for="item in tv_project" v-bind:key="item.id" v-bind:item="item" />
-      </ol>
-      <h3>Web (Project)</h3>
-      <ol>
-        <MediaItem v-for="item in web" v-bind:key="item.id" v-bind:item="item" />
       </ol>
     </div>
   </div>
@@ -78,6 +78,13 @@ const webradio = [
 ]
 
 const web_personal = [
+  {
+    "id": 4,
+    "title" : "「その機能って本当に使うの？」落合陽一の弟子、高専出身の未踏エンジニアが見せるプロダクトへのこだわり。",
+    "url" : "https://and-engineer.com/articles/Xsn9YxEAACUAEB8b",
+    "media_name" : "アンドエンジニア",
+    "date" : "2020.07.28"
+  },
   {
     "id": 3,
     "title" : "初心者でもYouTube風「テロップ」を簡単に。世界一やさしい動画編集アプリ誕生秘話",
