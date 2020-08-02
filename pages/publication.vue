@@ -200,6 +200,10 @@ const invited_talk = [
 
 const domestic = [
   {
+    "title": "<u>大峠和基</u>, 大谷まゆ. 2020. バナー制作のための背景を考慮した自動テキスト配置. 人工知能学会全国大会論文集 第34回全国大会. 一般社団法人 人工知能学会.",
+    "url": "https://www.jstage.jst.go.jp/article/pjsai/JSAI2020/0/JSAI2020_3Rin485/_article/-char/ja/"
+  },
+  {
     "title" : "<u>大峠和基</u>, 古賀崇了. 2017. 霧の形状変化に適応した映像投影を実現するインタラクティブフォグディスプレイの基礎的検討.インタラクション2017論文集. 情報処理学会, p.752-757.",
     "url" : "../works/mistflow/"
   }
