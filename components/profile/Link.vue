@@ -1,7 +1,7 @@
 <template>
   <div class="link">
     <h2>Link</h2>
-    
+
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <ul>
@@ -19,7 +19,7 @@
       <div class="col-xs-12 col-sm-6">
         <ul>
           <li :style="{'background-image': `url(${require('~/assets/profile/img/blog.png')})`}">
-            <a href="http://meokz.hatenablog.com/" target="_blank">meokz.hatenablog.com</a>
+            <a href="http://meokz.hatenablog.com/" target="_blank">Blog</a>
           </li>
           <!-- <li class="facebook"><a href="https://www.facebook.com/kaootao" target="_blank">Facebook</a></li> -->
           <li :style="{'background-image': `url(${require('~/assets/profile/img/slideshare.png')})`}">
@@ -51,6 +51,6 @@
 
 <script>
 export default {
-  
+
 }
 </script>
