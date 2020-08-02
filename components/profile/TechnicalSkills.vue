@@ -5,8 +5,9 @@
       <h3>Expert</h3>
       <div class="tag-no-color">
         <ul>
-          <li class="tag-blue">C#</li>
           <li class="tag-blue">Python</li>
+          <li class="tag-blue">Swift</li>
+          <li class="tag-blue">C#</li>
           <li class="tag-blue">Unity</li>
         </ul>
       </div>
@@ -23,15 +24,13 @@
       <div class="tag-no-color">
         <ul>
           <li class="tag-blue">C / C++</li>
-          <li class="tag-blue">Swift (iOS)</li>
-          <li class="tag-blue">Java (Android)</li>
+          <li class="tag-blue">HTML / CSS</li>
+          <li class="tag-blue">JavaScript / TypeScript</li>
         </ul>
       </div>
       <h3>Basic</h3>
       <div class="tag-no-color">
         <ul>
-          <li class="tag-blue">HTML / CSS</li>
-          <li class="tag-blue">JavaScript / TypeScript</li>
           <li class="tag-blue">React.js</li>
           <li class="tag-blue">Vue.js</li>
           <li class="tag-blue">Visual Basic</li>
