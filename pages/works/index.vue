@@ -270,6 +270,16 @@ const research = [
 
 const product = [
   {
+    "title" : "telorain: SNS向けテロップ自動生成アプリ",
+    "url" : "telorain",
+    "people" : "2",
+    "date" : "2019/03 - 2020/03",
+    "description" : "telorainはSNS向けのテロップ付き動画を生成する自動アルゴリズム及びiOSアプリです。",
+    "tag" : [
+      "未踏"
+    ]
+  },
+  {
     "title" : "Mealie：学食食券オンライン予約システム",
     "url" : "mealie",
     "people" : "4",
