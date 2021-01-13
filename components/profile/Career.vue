@@ -48,13 +48,13 @@ const carrer = {
   ],
   "work_jp": [
     "2015/08 - 2015/09 　チームラボ株式会社 インタラクティブチーム (就業インターン)",
-    "2016/12 - 2017/08 　ユニロボット株式会社 Unityエンジニア (就業インターン)",
+    "2016/12 - 2017/08 　ユニロボット株式会社 Unityエンジニア",
     "2017/09 - 2020/03 　ピクシーダストテクノロジーズ株式会社 リサーチエンジニア",
     "2020/04 - present. 　Telorain株式会社 代表取締役"
   ],
   "work_en": [
     "2015/08 - 2015/09 　teamLab Inc. Interactive Team (Intern)",
-    "2016/12 - 2017/08 　Unirobot Corporation. Unity Enginner (Intern)",
+    "2016/12 - 2017/08 　Unirobot Corporation. Unity Enginner",
     "2017/09 - 2020/03 　Pixie Dust Technologies, Inc. Research Enginner",
     "2020/04 - present. 　Telorain Inc. CEO & Founder"
   ]
