@@ -55,13 +55,11 @@ const carrer = {
     "2017/04 - present. 　Graduate School of Library, Information and Media Studies, University of Tsukuba"
   ],
   "work_jp": [
-    "2016/12 - 2017/08 　ユニロボット株式会社 Unityエンジニア",
     "2017/09 - 2020/03 　ピクシーダストテクノロジーズ株式会社 リサーチエンジニア",
     "2020/04 - 2021/01 　株式会社ランドスケイプ 社外CTO",
     "2020/04 - present. 　Telorain株式会社 代表取締役"
   ],
   "work_en": [
-    "2016/12 - 2017/08 　Unirobot Corporation. Unity Enginner",
     "2017/09 - 2020/03 　Pixie Dust Technologies, Inc. Research Enginner",
     "2020/04 - present. 　Telorain Inc. CEO & Founder"
   ],
