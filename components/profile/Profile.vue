@@ -28,8 +28,8 @@
 import Carousel from '~/components/profile/Carousel.vue'
 
 const profile = {
-  jp: "1996年広島生まれ．経済産業省所轄の情報処理推進機構より，2019年度未踏事業を通じてスーパクリエータ認定を受ける．筑波大学ミスコンでグランプリを受賞．筑波大学大学院図書館情報メディア研究科所属．筑波大学（学士，茗渓会賞），徳山高専（準学士，文化功労賞）を卒業．",
-  en: "Kazuki Otao was born in 1996. After studying computer science and electronic engineering at National Institute of Technology, Tokuyama College since 2012, he is incorporated into the College of Media Arts, Science and Technology at the University of Tsukuba in 2017. He got a prize in many contests including U-22 programming contest and national college of technology programming contest. He is an expert researcher of the aerial imaging system in Digital Nature Group."
+  jp: "1996年広島生まれ．筑波大学大学院図書館情報メディア研究科所属．徳山高専で情報電子を学んだあと，筑波大学に編入．2017年（当時学部3年）からピクシーダストテクノロジーズ株式会社でフルタイムのリサーチエンジニアとして，網膜投影ディスプレイおよび網膜撮像カメラの画像処理技術の開発に従事．学業と仕事を両立しながら2019年筑波大学大学院に進学．2020年に独立して，高品質なテロップを自動で生成するサービス「telorain.com」をリリース．経済産業省所轄の情報処理推進機構より，2019年度未踏事業を通じてスーパクリエータ認定を受ける．",
+  en: 'Kazuki Otao was born in Hiroshima in 1996. After studying computer science at Tokuyama College, he is enrolled in the University of Tsukuba. At the same time, he started developing image processing for retinal projection displays and retinal imaging cameras as a full-time research engineer at Pixie Dust Technologies, Inc. He became independent in 2020 and released "telorain.com", a service in which AI automatically generates videos. He is certified by the Japanese Ministry of Economy, Trade, and Industry as a "Super Programmer". '
 }
 
 export default {
