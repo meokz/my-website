@@ -141,6 +141,11 @@ const thesis_en = [
 
 const international_papers = [
   {
+    "title" : "<u>Kazuki Otao</u>, and Tetsuji Satoh. 2020. Text layout methods overlaid on images considering readability and balance. In <em>The 18th International Conference on Advances in Mobile Computing and Multimedia</em> (MoMM2020). ACM, New York, NY, USA, 5 pages. DOI: https://doi.org/10.1145/3428690.3429180",
+    "url" : "http://www.iiwas.org/conferences/iiwas2020/proceedings/momm-papers/index.html",
+    "acceptance_rate" : ""
+  },
+  {
     "title" : "<u>Kazuki Otao</u>, Yuta Itoh, Kazuki Takazawa, Hiroyuki Osone, and Yoichi Ochiai. 2018. Air Mounted Eyepiece: Optical See-Through HMD Design with Aerial Optical Functions. In <em>Proceedings of the 9th Augmented Human International Conference</em> (AH ’18). ACM, New York, NY, USA, Article 1, 7 pages. DOI: https://doi.org/10.1145/3174910.3174911",
     "url" : "../works/airmountedeyepiece",
     "acceptance_rate" : "34.5 % (27 out of 60)",
